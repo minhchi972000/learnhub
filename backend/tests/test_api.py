@@ -80,6 +80,17 @@ def test_flashcard_queue_and_review(client: TestClient):
     assert bad.status_code == 422
 
 
+def test_all_cards_grouped_by_unit(client: TestClient):
+    [unit] = client.get(f"{C}/flashcards").json()  # unit "more" has no cards, so it is left out
+    assert (unit["slug"], unit["order"], unit["title"]) == ("basics", 1, "Basics")
+    assert [(c["id"], c["example"], c["learned"]) for c in unit["cards"]] == [("c1", "", False), ("c2", "two apples", False)]
+
+    client.post(f"{C}/flashcards/reviews", json={"unit": "basics", "card_id": "c1", "rating": "good"})
+    learned = {c["id"]: c["learned"] for c in client.get(f"{C}/flashcards").json()[0]["cards"]}
+    assert learned == {"c1": True, "c2": False}
+    assert client.get("/api/courses/nope/flashcards").status_code == 404
+
+
 def test_learner_header_isolates_progress(client: TestClient):
     client.put(f"{C}/units/basics/lessons/intro/progress", json={"completed": True}, headers={"X-Learner": "alice"})
     assert client.get(C, headers={"X-Learner": "alice"}).json()["completed_lessons"] == 1

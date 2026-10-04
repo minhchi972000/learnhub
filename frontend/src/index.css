@@ -1,6 +1,9 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/typography';
 
+/* Dark styles only on screens, so printouts are always dark-on-white. */
+@custom-variant dark (@media screen and (prefers-color-scheme: dark));
+
 @theme {
   --font-sans: 'Be Vietnam Pro', ui-sans-serif, system-ui, sans-serif;
 }
@@ -16,12 +19,13 @@
 }
 
 /* Reusable building blocks (defined as utilities so they compose with @apply). */
+/* Flat surfaces: a hairline border separates content, no drop shadows. */
 @utility card {
-  @apply rounded-2xl border border-slate-200 bg-white shadow-sm dark:border-slate-800 dark:bg-slate-900;
+  @apply rounded-xl border border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-900;
 }
 
 @utility btn {
-  @apply inline-flex cursor-pointer items-center justify-center gap-2 rounded-xl px-4 py-2 text-sm font-semibold transition
+  @apply inline-flex cursor-pointer items-center justify-center gap-2 rounded-lg px-4 py-2 text-sm font-medium transition
     focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500
     disabled:cursor-not-allowed disabled:opacity-50;
 }
@@ -31,7 +35,7 @@
 }
 
 @utility btn-secondary {
-  @apply btn border border-slate-300 bg-white text-slate-700 hover:bg-slate-100
+  @apply btn border border-slate-200 bg-white text-slate-700 hover:bg-slate-50
     dark:border-slate-700 dark:bg-slate-900 dark:text-slate-200 dark:hover:bg-slate-800;
 }
 
@@ -54,4 +58,15 @@
 .prose table {
   display: block;
   overflow-x: auto;
+}
+
+/* Printing the knowledge summary: plain white paper even when the screen is in dark mode. */
+@media print {
+  html {
+    color-scheme: light;
+  }
+
+  body {
+    background: white;
+  }
 }

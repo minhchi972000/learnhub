@@ -54,10 +54,9 @@ export function QuizPage() {
         items={[
           { label: 'Khóa học', to: '/' },
           { label: 'Lộ trình', to: `/courses/${course}` },
-          { label: `Quiz · ${q.unit_title}` },
         ]}
       />
-      <h1 className="text-2xl font-bold text-slate-900 dark:text-white">Quiz: {q.unit_title}</h1>
+      <h1 className="text-2xl font-semibold text-slate-900 dark:text-white">Quiz: {q.unit_title}</h1>
       <p className="mt-1 text-sm text-slate-500">
         {q.questions.length} câu · đã làm {q.attempts} lần
         {q.best_percent != null && ` · cao nhất ${Math.round(q.best_percent)}%`}
@@ -115,7 +114,7 @@ function ResultBanner({
     result.percent >= 80 ? 'Xuất sắc! 🎉' : result.percent >= 50 ? 'Khá tốt, xem lại các câu sai nhé.' : 'Cần ôn lại bài học.'
   return (
     <div className="card mt-6 flex flex-wrap items-center gap-6 p-6">
-      <div className={`text-5xl font-bold tabular-nums ${scoreColor(result.percent)}`}>{Math.round(result.percent)}%</div>
+      <div className={`text-4xl font-semibold tabular-nums ${scoreColor(result.percent)}`}>{Math.round(result.percent)}%</div>
       <div className="flex-1">
         <p className="font-semibold">
           Đúng {result.score}/{result.total} câu
@@ -159,21 +158,16 @@ function QuestionCard({
 
   return (
     <li className={`card p-5 sm:p-6 ${border}`}>
-      <div className="flex items-start gap-3">
-        <span className="grid size-7 shrink-0 place-items-center rounded-full bg-slate-100 text-sm font-semibold dark:bg-slate-800">
-          {index + 1}
-        </span>
-        <div className="min-w-0 flex-1">
-          <p className="text-xs font-medium tracking-wide text-slate-500 uppercase">{TYPE_HINT[question.type]}</p>
-          <div className="mt-1 font-medium text-slate-900 dark:text-white">
-            <InlineMarkdown>{question.prompt}</InlineMarkdown>
-          </div>
-          <div className="mt-4">
-            <AnswerInput question={question} value={value} onChange={onChange} locked={locked} result={result} />
-          </div>
-          {result && <Feedback question={question} result={result} />}
-        </div>
+      <p className="text-xs text-slate-500">
+        Câu {index + 1} · {TYPE_HINT[question.type]}
+      </p>
+      <div className="mt-1.5 font-medium text-slate-900 dark:text-white">
+        <InlineMarkdown>{question.prompt}</InlineMarkdown>
       </div>
+      <div className="mt-4">
+        <AnswerInput question={question} value={value} onChange={onChange} locked={locked} result={result} />
+      </div>
+      {result && <Feedback question={question} result={result} />}
     </li>
   )
 }
@@ -195,7 +189,7 @@ function AnswerInput({
     return (
       <input
         type="text"
-        className="w-full rounded-xl border border-slate-300 bg-white px-4 py-2.5 outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 disabled:opacity-70 dark:border-slate-700 dark:bg-slate-950 dark:focus:ring-indigo-900"
+        className="w-full rounded-lg border border-slate-200 bg-white px-4 py-2.5 outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 disabled:opacity-70 dark:border-slate-700 dark:bg-slate-950 dark:focus:ring-indigo-900"
         placeholder="Nhập câu trả lời…"
         value={typeof value === 'string' ? value : ''}
         disabled={locked}
@@ -236,8 +230,8 @@ function AnswerInput({
       {options.map((o) => {
         const selected = isSelected(o.value)
         let tone = selected
-          ? 'border-indigo-500 bg-indigo-50 dark:bg-indigo-950/50'
-          : 'border-slate-200 hover:border-slate-300 dark:border-slate-700 dark:hover:border-slate-600'
+          ? 'border-indigo-500 bg-indigo-50 ring-1 ring-indigo-500 dark:bg-indigo-950/50'
+          : 'border-slate-200 hover:border-slate-300 hover:bg-slate-50 dark:border-slate-700 dark:hover:border-slate-600 dark:hover:bg-slate-800/40'
         if (locked) {
           if (isCorrectOption(o.value)) tone = 'border-emerald-500 bg-emerald-50 dark:bg-emerald-950/40'
           else if (selected) tone = 'border-rose-500 bg-rose-50 dark:bg-rose-950/40'
@@ -249,11 +243,11 @@ function AnswerInput({
             type="button"
             disabled={locked}
             onClick={() => toggle(o.value)}
-            className={`flex w-full cursor-pointer items-center gap-3 rounded-xl border-2 px-4 py-2.5 text-left text-sm transition disabled:cursor-default ${tone}`}
+            className={`flex w-full cursor-pointer items-center gap-3 rounded-lg border px-4 py-2.5 text-left text-sm transition disabled:cursor-default ${tone}`}
           >
             {question.type !== 'true_false' && (
               <span
-                className={`grid size-5 shrink-0 place-items-center border-2 ${
+                className={`grid size-4 shrink-0 place-items-center border ${
                   question.type === 'multi' ? 'rounded-md' : 'rounded-full'
                 } ${selected ? 'border-indigo-500 bg-indigo-500 text-white' : 'border-slate-300 dark:border-slate-600'}`}
               >
@@ -277,7 +271,7 @@ function Feedback({ question, result }: { question: PublicQuestion; result: Ques
       : null
   return (
     <div
-      className={`mt-4 rounded-xl p-4 text-sm ${
+      className={`mt-4 rounded-lg p-4 text-sm ${
         result.correct
           ? 'bg-emerald-50 text-emerald-900 dark:bg-emerald-950/40 dark:text-emerald-200'
           : 'bg-rose-50 text-rose-900 dark:bg-rose-950/40 dark:text-rose-200'

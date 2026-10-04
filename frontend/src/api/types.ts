@@ -151,3 +151,18 @@ export interface Health {
   env: 'dev' | 'demo' | 'prod'
   courses: number
 }
+
+export interface DeckCard {
+  id: string
+  front: string
+  back: string
+  example: string
+  learned: boolean
+}
+
+export interface DeckUnit {
+  slug: string
+  order: number
+  title: string
+  cards: DeckCard[]
+}

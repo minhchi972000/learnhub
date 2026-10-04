@@ -10,53 +10,48 @@ export function HomePage() {
   if (error) return <ErrorState error={error} onRetry={reload} />
 
   return (
-    <div>
-      <h1 className="text-3xl font-bold text-slate-900 dark:text-white">Khóa học của bạn</h1>
-      <p className="mt-2 text-slate-500">Chọn một khóa học để tiếp tục hành trình.</p>
+    <div className="mx-auto max-w-3xl">
+      <h1 className="text-2xl font-semibold text-slate-900 dark:text-white">Khóa học</h1>
 
       {data?.length === 0 && (
-        <div className="card mt-8 p-8 text-center text-slate-500">
+        <p className="card mt-6 p-8 text-center text-sm text-slate-500">
           Chưa có khóa học nào. Thêm một thư mục vào <code>content/courses/</code> để bắt đầu.
-        </div>
+        </p>
       )}
 
-      <div className="mt-8 grid gap-5 sm:grid-cols-2">
+      <ul className="mt-6 space-y-3">
         {data?.map((c) => {
           const pct = c.lesson_count ? (100 * c.completed_lessons) / c.lesson_count : 0
           return (
-            <Link
-              key={c.slug}
-              to={`/courses/${c.slug}`}
-              className="card group flex flex-col p-6 transition hover:-translate-y-0.5 hover:border-indigo-300 hover:shadow-md"
-            >
-              <div className="flex flex-wrap gap-1.5">
-                {c.tags.map((t) => (
-                  <span
-                    key={t}
-                    className="rounded-full bg-indigo-50 px-2 py-0.5 text-xs font-medium text-indigo-700 dark:bg-indigo-950 dark:text-indigo-300"
-                  >
-                    {t}
+            <li key={c.slug}>
+              <Link
+                to={`/courses/${c.slug}`}
+                className="card group block p-5 transition hover:border-indigo-300 sm:p-6 dark:hover:border-indigo-700"
+              >
+                <div className="flex items-start justify-between gap-4">
+                  <div className="min-w-0">
+                    <h2 className="font-semibold text-slate-900 group-hover:text-indigo-600 dark:text-white">{c.title}</h2>
+                    <p className="mt-0.5 text-sm text-slate-500">
+                      {[c.level, `${c.unit_count} unit`, `${c.lesson_count} bài`].filter(Boolean).join(' · ')}
+                    </p>
+                  </div>
+                  <span className="shrink-0 text-sm font-medium text-indigo-600 dark:text-indigo-400">
+                    {c.completed_lessons === 0 ? 'Bắt đầu' : 'Học tiếp'} →
                   </span>
-                ))}
-              </div>
-              <h2 className="mt-3 text-xl font-bold text-slate-900 group-hover:text-indigo-600 dark:text-white">
-                {c.title}
-              </h2>
-              {c.level && <p className="mt-1 text-sm font-medium text-slate-500">{c.level}</p>}
-              <p className="mt-3 line-clamp-3 flex-1 text-sm text-slate-600 dark:text-slate-400">{c.description}</p>
-              <div className="mt-5">
-                <div className="mb-1.5 flex justify-between text-xs text-slate-500">
-                  <span>
-                    {c.completed_lessons}/{c.lesson_count} bài · {c.unit_count} unit
-                  </span>
-                  {c.cards_due > 0 && <span className="font-medium text-amber-600">{c.cards_due} thẻ cần ôn</span>}
                 </div>
-                <ProgressBar value={pct} />
-              </div>
-            </Link>
+                <p className="mt-3 line-clamp-2 text-sm text-slate-600 dark:text-slate-400">{c.description}</p>
+                <div className="mt-4 flex items-center gap-3">
+                  <ProgressBar value={pct} />
+                  <span className="shrink-0 text-xs text-slate-500 tabular-nums">{Math.round(pct)}%</span>
+                </div>
+                {c.cards_due > 0 && (
+                  <p className="mt-2 text-xs font-medium text-amber-600">{c.cards_due} thẻ đến hạn ôn</p>
+                )}
+              </Link>
+            </li>
           )
         })}
-      </div>
+      </ul>
     </div>
   )
 }

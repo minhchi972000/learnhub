@@ -48,7 +48,7 @@ export function LessonPage() {
       />
 
       <header className="mb-6">
-        <h1 className="text-2xl font-bold text-slate-900 sm:text-3xl dark:text-white">{l.title}</h1>
+        <h1 className="text-2xl font-semibold text-slate-900 sm:text-3xl dark:text-white">{l.title}</h1>
         {l.completed && (
           <p className="mt-2 inline-flex items-center gap-1.5 rounded-full bg-emerald-50 px-3 py-1 text-sm font-medium text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300">
             <CheckIcon /> Đã hoàn thành

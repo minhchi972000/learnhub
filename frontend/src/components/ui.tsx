@@ -5,7 +5,7 @@ export function ProgressBar({ value, className = '' }: { value: number; classNam
   const pct = Math.max(0, Math.min(100, value))
   return (
     <div
-      className={`h-2 w-full overflow-hidden rounded-full bg-slate-200 dark:bg-slate-800 ${className}`}
+      className={`h-1.5 w-full overflow-hidden rounded-full bg-slate-100 dark:bg-slate-800 ${className}`}
       role="progressbar"
       aria-valuenow={Math.round(pct)}
       aria-valuemin={0}
@@ -44,12 +44,13 @@ export function ErrorState({ error, onRetry }: { error: Error; onRetry?: () => v
   )
 }
 
+/** One figure in a row of stats; the parent draws the dividers. */
 export function StatTile({ label, value, hint }: { label: string; value: ReactNode; hint?: ReactNode }) {
   return (
-    <div className="card p-4">
-      <p className="text-xs font-medium tracking-wide text-slate-500 uppercase">{label}</p>
-      <p className="mt-1 text-2xl font-bold text-slate-900 tabular-nums dark:text-white">{value}</p>
-      {hint && <p className="mt-1 text-xs text-slate-500">{hint}</p>}
+    <div className="min-w-0 px-4 py-4 sm:px-6">
+      <p className="text-xs text-slate-500">{label}</p>
+      <p className="mt-1 text-xl font-semibold text-slate-900 tabular-nums dark:text-white">{value}</p>
+      {hint && <p className="mt-0.5 truncate text-xs text-slate-400">{hint}</p>}
     </div>
   )
 }

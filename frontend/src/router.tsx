@@ -6,6 +6,7 @@ import { HomePage } from './pages/HomePage'
 import { LessonPage } from './pages/LessonPage'
 import { NotFoundPage } from './pages/NotFoundPage'
 import { QuizPage } from './pages/QuizPage'
+import { SummaryPage } from './pages/SummaryPage'
 
 export const router = createBrowserRouter([
   {
@@ -16,6 +17,7 @@ export const router = createBrowserRouter([
       { path: '/courses/:course/units/:unit/lessons/:lesson', element: <LessonPage /> },
       { path: '/courses/:course/units/:unit/quiz', element: <QuizPage /> },
       { path: '/courses/:course/review', element: <FlashcardsPage /> },
+      { path: '/courses/:course/summary', element: <SummaryPage /> },
       { path: '*', element: <NotFoundPage /> },
     ],
   },

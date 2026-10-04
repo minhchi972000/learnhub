@@ -7,10 +7,10 @@ import { Breadcrumbs, ErrorState, Loading, ProgressBar } from '../components/ui'
 import { useApi } from '../hooks/useApi'
 
 const RATINGS: { rating: Rating; label: string; hint: string; key: string; tone: string }[] = [
-  { rating: 'again', label: 'Quên', hint: '~10 phút', key: '1', tone: 'bg-rose-600 hover:bg-rose-500' },
-  { rating: 'hard', label: 'Khó', hint: 'sớm', key: '2', tone: 'bg-amber-600 hover:bg-amber-500' },
-  { rating: 'good', label: 'Nhớ', hint: 'vài ngày', key: '3', tone: 'bg-emerald-600 hover:bg-emerald-500' },
-  { rating: 'easy', label: 'Dễ', hint: 'lâu hơn', key: '4', tone: 'bg-sky-600 hover:bg-sky-500' },
+  { rating: 'again', label: 'Quên', hint: '~10 phút', key: '1', tone: 'border-rose-200 bg-rose-50 text-rose-700 hover:bg-rose-100 dark:border-rose-900 dark:bg-rose-950/40 dark:text-rose-300' },
+  { rating: 'hard', label: 'Khó', hint: 'sớm', key: '2', tone: 'border-amber-200 bg-amber-50 text-amber-700 hover:bg-amber-100 dark:border-amber-900 dark:bg-amber-950/40 dark:text-amber-300' },
+  { rating: 'good', label: 'Nhớ', hint: 'vài ngày', key: '3', tone: 'border-emerald-200 bg-emerald-50 text-emerald-700 hover:bg-emerald-100 dark:border-emerald-900 dark:bg-emerald-950/40 dark:text-emerald-300' },
+  { rating: 'easy', label: 'Dễ', hint: 'lâu hơn', key: '4', tone: 'border-sky-200 bg-sky-50 text-sky-700 hover:bg-sky-100 dark:border-sky-900 dark:bg-sky-950/40 dark:text-sky-300' },
 ]
 
 export function FlashcardsPage() {
@@ -35,7 +35,7 @@ export function FlashcardsPage() {
         ]}
       />
       <div className="flex flex-wrap items-end justify-between gap-2">
-        <h1 className="text-2xl font-bold text-slate-900 dark:text-white">Ôn flashcard</h1>
+        <h1 className="text-2xl font-semibold text-slate-900 dark:text-white">Ôn flashcard</h1>
         <p className="text-sm text-slate-500">
           {data.due_count} đến hạn · {data.new_count} thẻ mới
         </p>
@@ -124,7 +124,7 @@ function ReviewSession({ course, due, onReload }: { course: string; due: DueCard
       <button
         type="button"
         onClick={() => setFlipped(true)}
-        className="card mt-6 flex min-h-72 w-full cursor-pointer flex-col items-center justify-center p-8 text-center"
+        className="card mt-6 flex min-h-64 w-full cursor-pointer hover:border-slate-300 dark:hover:border-slate-700 flex-col items-center justify-center p-8 text-center"
       >
         {card.is_new && (
           <span className="mb-4 rounded-full bg-indigo-50 px-2.5 py-0.5 text-xs font-semibold text-indigo-700 dark:bg-indigo-950 dark:text-indigo-300">
@@ -157,10 +157,10 @@ function ReviewSession({ course, due, onReload }: { course: string; due: DueCard
               key={r.rating}
               disabled={busy}
               onClick={() => rate(r.rating)}
-              className={`btn flex-col gap-0 py-3 text-white ${r.tone}`}
+              className={`btn flex-col gap-0 border py-3 ${r.tone}`}
             >
               <span>{r.label}</span>
-              <span className="text-[11px] font-normal opacity-80">
+              <span className="text-[11px] font-normal opacity-70">
                 {r.hint} · phím {r.key}
               </span>
             </button>

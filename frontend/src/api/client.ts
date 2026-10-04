@@ -3,6 +3,7 @@ import type {
   CourseDetail,
   CourseStats,
   CourseSummary,
+  DeckUnit,
   DueCards,
   Health,
   LessonDetail,
@@ -97,6 +98,8 @@ export const api = {
       method: 'POST',
       body: JSON.stringify({ answers }),
     }),
+
+  getAllCards: (course: string) => request<DeckUnit[]>(`${coursePath(course)}/flashcards`),
 
   getDueCards: (course: string, unit?: string, newLimit = 20) => {
     const params = new URLSearchParams({ new_limit: String(newLimit) })

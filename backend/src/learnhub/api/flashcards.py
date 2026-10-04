@@ -11,9 +11,34 @@ from ..models import CardState, utcnow
 from ..services import progress
 from ..services.srs import schedule
 from .deps import CourseDep, LearnerDep, SessionDep
-from .schemas import CardOut, DueCards, ReviewIn, ReviewOut
+from .schemas import CardOut, DeckCard, DeckUnit, DueCards, ReviewIn, ReviewOut
 
 router = APIRouter(prefix="/api/courses/{course}/flashcards", tags=["flashcards"])
+
+
+@router.get("", response_model=list[DeckUnit])
+def all_cards(course: CourseDep, session: SessionDep, learner: LearnerDep) -> list[DeckUnit]:
+    """Every card of the course grouped by unit; `learned` matches the stats' cards_learned (reviewed at least once)."""
+    states = progress.card_states(session, learner, course.slug)
+    return [
+        DeckUnit(
+            slug=u.slug,
+            order=u.order,
+            title=u.title,
+            cards=[
+                DeckCard(
+                    id=c.id,
+                    front=c.front,
+                    back=c.back,
+                    example=c.example,
+                    learned=(s := states.get((u.slug, c.id))) is not None and s.reps > 0,
+                )
+                for c in u.deck.cards
+            ],
+        )
+        for u in course.units
+        if u.deck.cards
+    ]
 
 
 @router.get("/due", response_model=DueCards)

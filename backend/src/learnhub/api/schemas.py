@@ -131,6 +131,23 @@ class DueCards(BaseModel):
     new_count: int
 
 
+class DeckCard(BaseModel):
+    id: str
+    front: str
+    back: str
+    example: str
+    learned: bool
+
+
+class DeckUnit(BaseModel):
+    """One unit's flashcards for the knowledge summary page."""
+
+    slug: str
+    order: int
+    title: str
+    cards: list[DeckCard]
+
+
 class ReviewIn(BaseModel):
     unit: str
     card_id: str
