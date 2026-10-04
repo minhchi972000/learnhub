@@ -31,6 +31,40 @@ cd backend;  uv sync; uv run learnhub serve --reload      # http://127.0.0.1:800
 cd frontend; npm install; npm run dev                      # http://localhost:5173
 ```
 
+## Environments: dev, demo, prod
+
+`LEARNHUB_ENV` selects the environment (default `dev`). Each one keeps its own database, so demo
+resets never touch prod data.
+
+| | `dev` | `demo` | `prod` |
+|---|---|---|---|
+| Script | `dev.ps1` / `start.ps1` | `serve.ps1 -Env demo` | `serve.ps1 -Env prod` |
+| Port | 8000 (+ Vite 5173) | 8001 | 8000 |
+| Database | `data/learnhub.db` | `data/demo/learnhub.db`, **wiped on every start** | `data/prod/learnhub.db`, kept |
+| `/docs` (Swagger) | on | on | off |
+| `POST /api/content/reload` | open | open | needs `X-Admin-Token` header |
+| UI | – | yellow "DEMO" banner | – |
+
+```powershell
+./scripts/up.ps1                    # build once, start prod (:8000) + demo (:8001) in two windows
+./scripts/serve.ps1 -Env prod       # or start one environment (builds the frontend first)
+./scripts/serve.ps1 -Env demo -BindHost 0.0.0.0   # let other machines on the LAN reach the demo
+```
+
+Prod secrets live in `.env.prod` (git-ignored; copy `.env.prod.example`). `serve.ps1` loads
+`.env.<env>` into the environment before starting. Reload content in prod with:
+
+```powershell
+Invoke-RestMethod -Method Post http://127.0.0.1:8000/api/content/reload -Headers @{ 'X-Admin-Token' = '<token>' }
+```
+
+## Hosting on Vercel (free)
+
+`main` deploys to Production (prod) and the `demo` branch to Preview (demo), with Postgres on Neon
+because Vercel's filesystem is read-only. Step-by-step setup: [docs/DEPLOY.md](docs/DEPLOY.md).
+Vercel loads [app.py](app.py) and installs [requirements.txt](requirements.txt); [vercel.json](vercel.json)
+builds the frontend. The demo database is reset on demand with `uv run learnhub reset-db --yes`.
+
 ## Everyday commands
 
 | Task | Command (from `backend/`) |
@@ -55,9 +89,9 @@ learnhub/
 ├── backend/                 FastAPI app (src/learnhub) + tests
 ├── frontend/                React SPA (src/api, src/pages, src/components)
 ├── content/courses/         one folder per course
-├── data/                    SQLite DB (created on first run, git-ignored)
-├── docs/                    PLAN.md (architecture), CONTENT_FORMAT.md
-└── scripts/                 start.ps1, dev.ps1
+├── data/                    SQLite DBs: learnhub.db (dev), demo/, prod/ (git-ignored)
+├── docs/                    PLAN.md (architecture), CONTENT_FORMAT.md, DEPLOY.md (Vercel)
+└── scripts/                 start.ps1, dev.ps1, serve.ps1, up.ps1
 ```
 
 ## Configuration
@@ -66,8 +100,10 @@ Environment variables (all optional):
 
 | Variable | Default |
 |----------|---------|
+| `LEARNHUB_ENV` | `dev` (one of `dev`, `demo`, `prod`) |
+| `LEARNHUB_ADMIN_TOKEN` | unset (prod: admin endpoints disabled) |
 | `LEARNHUB_CONTENT_DIR` | `<repo>/content` |
-| `LEARNHUB_DATA_DIR` | `<repo>/data` |
-| `LEARNHUB_DATABASE_URL` | `sqlite:///<data>/learnhub.db` |
+| `LEARNHUB_DATA_DIR` | `<repo>/data` (dev), `<repo>/data/<env>` otherwise |
+| `LEARNHUB_DATABASE_URL` | `DATABASE_URL` if set, else `sqlite:///<data>/learnhub.db` |
 | `LEARNHUB_FRONTEND_DIST` | `<repo>/frontend/dist` |
-| `LEARNHUB_CORS_ORIGINS` | `http://localhost:5173` |
+| `LEARNHUB_CORS_ORIGINS` | `http://localhost:5173` in dev, none otherwise |

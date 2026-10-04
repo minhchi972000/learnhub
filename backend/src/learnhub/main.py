@@ -2,9 +2,11 @@
 
 from __future__ import annotations
 
+import secrets
 from pathlib import Path
+from typing import Annotated
 
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, Header, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
 
@@ -16,10 +18,11 @@ from .db import make_engine
 
 def create_app(settings: Settings | None = None, catalog: Catalog | None = None) -> FastAPI:
     settings = settings or get_settings()
-    app = FastAPI(title="LearnHub API", version="0.1.0")
+    docs = {} if settings.docs_enabled else {"docs_url": None, "redoc_url": None, "openapi_url": None}
+    app = FastAPI(title="LearnHub API", version="0.1.0", **docs)
     app.state.settings = settings
     app.state.catalog = catalog or load_catalog(settings.content_dir)
-    app.state.engine = make_engine(settings.database_url)
+    app.state.engine = make_engine(settings.database_url, reset=settings.reset_db_on_start)
 
     app.add_middleware(
         CORSMiddleware,
@@ -30,11 +33,12 @@ def create_app(settings: Settings | None = None, catalog: Catalog | None = None)
 
     @app.get("/api/health", tags=["meta"])
     def health() -> dict[str, object]:
-        return {"status": "ok", "courses": len(app.state.catalog.courses)}
+        return {"status": "ok", "env": settings.env, "courses": len(app.state.catalog.courses)}
 
     @app.post("/api/content/reload", tags=["meta"])
-    def reload_content() -> dict[str, object]:
+    def reload_content(x_admin_token: Annotated[str | None, Header()] = None) -> dict[str, object]:
         """Re-read content from disk; keeps the old catalog if the new one is invalid."""
+        _check_admin(settings, x_admin_token)
         try:
             app.state.catalog = load_catalog(settings.content_dir)
         except ContentError as e:
@@ -47,6 +51,15 @@ def create_app(settings: Settings | None = None, catalog: Catalog | None = None)
 
     _mount_frontend(app, settings.frontend_dist)
     return app
+
+
+def _check_admin(settings: Settings, token: str | None) -> None:
+    """Admin endpoints need X-Admin-Token when a token is configured; prod refuses them without one."""
+    if settings.admin_token:
+        if not (token and secrets.compare_digest(token.encode(), settings.admin_token.encode())):
+            raise HTTPException(403, "invalid admin token")
+    elif settings.env == "prod":
+        raise HTTPException(403, "set LEARNHUB_ADMIN_TOKEN to enable admin endpoints")
 
 
 def _mount_frontend(app: FastAPI, dist: Path) -> None:

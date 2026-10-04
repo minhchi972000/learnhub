@@ -6,7 +6,7 @@ C = "/api/courses/demo-course"
 
 
 def test_health_and_list(client: TestClient):
-    assert client.get("/api/health").json() == {"status": "ok", "courses": 1}
+    assert client.get("/api/health").json() == {"status": "ok", "env": "dev", "courses": 1}
     [course] = client.get("/api/courses").json()
     assert course["slug"] == "demo-course"
     assert (course["unit_count"], course["lesson_count"], course["completed_lessons"]) == (2, 3, 0)

@@ -17,3 +17,8 @@ data/
 Thumbs.db
 .vscode/
 .idea/
+
+# Per-environment secrets (see .env.prod.example)
+.env
+.env.*
+!.env.*.example

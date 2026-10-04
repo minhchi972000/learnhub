@@ -27,6 +27,9 @@ def main(argv: list[str] | None = None) -> int:
     s.add_argument("--port", type=int, default=8000)
     s.add_argument("--reload", action="store_true")
 
+    r = sub.add_parser("reset-db", help="wipe all learner progress (refused when LEARNHUB_ENV=prod)")
+    r.add_argument("--yes", action="store_true", help="confirm the wipe")
+
     args = parser.parse_args(argv)
     if args.cmd == "validate":
         return _validate(args.content_dir or get_settings().content_dir)
@@ -35,7 +38,25 @@ def main(argv: list[str] | None = None) -> int:
 
         uvicorn.run("learnhub.main:create_app", factory=True, host=args.host, port=args.port, reload=args.reload)
         return 0
+    if args.cmd == "reset-db":
+        return _reset_db(args.yes)
     return 1
+
+
+def _reset_db(confirmed: bool) -> int:
+    from .db import make_engine
+
+    settings = get_settings()
+    if settings.env == "prod":
+        print("refusing to reset the prod database (LEARNHUB_ENV=prod)", file=sys.stderr)
+        return 1
+    target = settings.database_url.split("@")[-1]  # don't echo credentials
+    if not confirmed:
+        print(f"would wipe [{settings.env}] {target}; re-run with --yes", file=sys.stderr)
+        return 1
+    make_engine(settings.database_url, reset=True).dispose()
+    print(f"reset [{settings.env}] {target}")
+    return 0
 
 
 def _validate(content_dir: Path) -> int:

@@ -145,3 +145,9 @@ export interface CourseStats {
   cards_due: number
   recent_attempts: AttemptItem[]
 }
+
+export interface Health {
+  status: string
+  env: 'dev' | 'demo' | 'prod'
+  courses: number
+}

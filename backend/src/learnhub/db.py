@@ -9,11 +9,16 @@ from sqlmodel import Session, SQLModel, create_engine
 from . import models  # noqa: F401  (registers tables on SQLModel.metadata)
 
 
-def make_engine(database_url: str) -> Engine:
+def make_engine(database_url: str, reset: bool = False) -> Engine:
     if database_url.startswith("sqlite:///") and ":memory:" not in database_url:
         Path(database_url.removeprefix("sqlite:///")).parent.mkdir(parents=True, exist_ok=True)
-    connect_args = {"check_same_thread": False} if database_url.startswith("sqlite") else {}
-    engine = create_engine(database_url, connect_args=connect_args)
+    if database_url.startswith("sqlite"):
+        engine = create_engine(database_url, connect_args={"check_same_thread": False})
+    else:
+        # Hosted Postgres drops idle connections; check before reuse instead of failing the request.
+        engine = create_engine(database_url, pool_pre_ping=True)
+    if reset:
+        SQLModel.metadata.drop_all(engine)
     SQLModel.metadata.create_all(engine)
     return engine
 
