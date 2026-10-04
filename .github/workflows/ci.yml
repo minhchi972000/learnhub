@@ -1,0 +1,54 @@
+# Runs on every push and pull request. Vercel deploys independently and does not wait for this,
+# so check that it is green on `demo` before merging into `main` (prod).
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  backend:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: backend
+    steps:
+      - uses: actions/checkout@v7
+      - uses: astral-sh/setup-uv@v10
+        with:
+          enable-cache: true
+          cache-dependency-glob: backend/uv.lock
+      - run: uv sync --locked
+      - name: Validate course content
+        run: uv run learnhub validate
+      - name: Tests
+        run: uv run pytest -q
+      - name: requirements.txt matches uv.lock (Vercel installs from it)
+        run: |
+          uv export --format requirements-txt --no-dev --no-hashes --no-emit-project --no-header -q -o "$RUNNER_TEMP/req.txt"
+          diff <(grep -v '^# ' ../requirements.txt) "$RUNNER_TEMP/req.txt" \
+            || { echo "::error::requirements.txt is stale; regenerate it with the command at its top"; exit 1; }
+      - name: Vercel entrypoint imports with only requirements.txt installed
+        working-directory: .
+        env:
+          LEARNHUB_DATA_DIR: ${{ runner.temp }}/data
+        run: |
+          uv venv "$RUNNER_TEMP/vercel" --python 3.12
+          uv pip install --python "$RUNNER_TEMP/vercel" -r requirements.txt
+          "$RUNNER_TEMP/vercel/bin/python" -c "import app; print('app.py OK:', app.app.title)"
+
+  frontend:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: frontend
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run build

@@ -59,6 +59,10 @@ git checkout demo; git merge main; git push        # -> demo tự deploy
 git checkout main; git merge demo; git push        # -> prod tự deploy
 ```
 
+Mỗi lần push, GitHub Actions ([.github/workflows/ci.yml](../.github/workflows/ci.yml)) tự chạy test, lint
+và kiểm tra cấu hình Vercel. Kết quả xem ở tab **Actions** trên GitHub. Vercel không đợi CI, nên hãy
+đợi CI báo ✅ trên `demo` rồi mới merge vào `main`.
+
 Xoá toàn bộ tiến độ học trên demo (lệnh này từ chối chạy khi `LEARNHUB_ENV=prod`):
 
 ```powershell
