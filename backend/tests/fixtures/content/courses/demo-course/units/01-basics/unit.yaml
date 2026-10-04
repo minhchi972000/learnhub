@@ -1,0 +1,5 @@
+title: Basics
+summary: First unit.
+lessons:
+  - {slug: intro, title: Intro, file: 01-intro.md}
+  - {slug: second, title: Second, file: 02-second.md}

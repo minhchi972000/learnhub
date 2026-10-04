@@ -1,0 +1,78 @@
+questions:
+  - id: four-criteria
+    type: multi
+    prompt: Chọn **tất cả** các tiêu chí dùng để chấm IELTS Writing.
+    options:
+      - Task Achievement / Task Response
+      - Coherence & Cohesion
+      - Handwriting & Presentation
+      - Lexical Resource
+      - Grammatical Range & Accuracy
+      - Creativity of Ideas
+    answer: [0, 1, 3, 4]
+    explanation: >-
+      IELTS Writing chấm theo 4 tiêu chí ngang nhau: TA/TR, CC, LR và GRA.
+      Chữ viết đẹp hay ý tưởng "độc lạ" không phải là tiêu chí chấm điểm.
+
+  - id: criteria-equal-weight
+    type: true_false
+    prompt: Bốn tiêu chí chấm điểm có trọng số ngang nhau (mỗi tiêu chí 25%).
+    answer: true
+    explanation: Điểm của một bài là trung bình cộng của 4 tiêu chí, không tiêu chí nào "nặng" hơn tiêu chí nào.
+
+  - id: cc-meaning
+    type: single
+    prompt: "Tiêu chí **Coherence & Cohesion** đánh giá điều gì?"
+    options:
+      - Bài viết có đủ số từ tối thiểu không
+      - Ý được sắp xếp logic và liên kết với nhau tốt không
+      - Người viết có dùng từ vựng khó không
+      - Người viết có mắc lỗi chính tả không
+    answer: 1
+    explanation: >-
+      CC = mạch lạc (coherence – ý sắp xếp logic, chia đoạn rõ) và liên kết (cohesion – từ nối, từ thay thế).
+      Từ vựng và chính tả thuộc về Lexical Resource.
+
+  - id: novel-ideas
+    type: true_false
+    prompt: Giám khảo sẽ cho điểm cao hơn nếu ý tưởng trong bài thật độc đáo, hiếm gặp.
+    answer: false
+    explanation: >-
+      Mô tả band điểm không nhắc tới độ "độc lạ" của ý. Ý được đánh giá cao khi **trả lời đúng câu hỏi của đề**
+      và **được phát triển đủ sâu, đủ thuyết phục**.
+
+  - id: band5-grammar
+    type: single
+    prompt: Về ngữ pháp, điều gì giúp bài viết vượt lên band 5 so với band 4?
+    options:
+      - Chỉ dùng câu đơn để không mắc lỗi
+      - Có cố gắng dùng câu phức, dù vẫn còn một số lỗi
+      - Dùng thật nhiều câu dài trên 40 từ
+      - Không dùng dấu phẩy để tránh sai
+    answer: 1
+    explanation: >-
+      Band 4 rất hiếm khi dùng mệnh đề phụ thuộc; band 5 đã **cố gắng dùng câu phức** dù độ chính xác chưa cao.
+      Tuy vậy, hãy ưu tiên câu đúng trước rồi mới tăng độ đa dạng.
+
+  - id: task2-min-words
+    type: fill
+    prompt: "Bài Writing Task 2 cần viết tối thiểu ___ từ. (điền số)"
+    answer: ["250", "250 từ", "250 words"]
+    explanation: Task 1 tối thiểu 150 từ (~20 phút), Task 2 tối thiểu 250 từ (~40 phút).
+
+  - id: lr-name
+    type: fill
+    prompt: "Tiêu chí đánh giá vốn từ vựng có tên tiếng Anh là ___ Resource."
+    answer: [Lexical]
+    explanation: Lexical Resource (LR) đánh giá độ rộng, độ chính xác của từ vựng, collocation và chính tả.
+
+  - id: study-habit
+    type: single
+    prompt: Cách tự học nào được khuyến nghị trong khóa?
+    options:
+      - Đọc thật kỹ lý thuyết, chưa cần viết cho đến khi học xong cả khóa
+      - Học theo thứ tự, làm quiz, tự viết câu và ghi lại lỗi sai của mình
+      - Bỏ qua phần nền tảng, học thẳng các dạng đề Task 2
+      - Học dồn một buổi thật dài mỗi tuần
+    answer: 1
+    explanation: Kỹ năng viết chỉ tiến bộ khi bạn tự viết – tự soát – ghi lại lỗi. Phần nền tảng là xương sống cho cả Task 1 và Task 2.

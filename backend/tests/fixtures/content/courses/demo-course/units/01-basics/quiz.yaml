@@ -1,0 +1,5 @@
+questions:
+  - {id: q-single, type: single, prompt: Pick B, options: [A, B, C], answer: 1, explanation: B is right}
+  - {id: q-multi, type: multi, prompt: Pick A and C, options: [A, B, C], answer: [0, 2]}
+  - {id: q-tf, type: true_false, prompt: Sky is blue, answer: true}
+  - {id: q-fill, type: fill, prompt: "result ___ problems", answer: in}

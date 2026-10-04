@@ -1,0 +1,44 @@
+cards:
+  - id: ta-tr
+    front: TA / TR
+    back: "Task Achievement (Task 1) / Task Response (Task 2) – trả lời **đúng và đủ** yêu cầu đề, ý được phát triển rõ."
+
+  - id: cc
+    front: CC – Coherence & Cohesion
+    back: "Mạch lạc (ý sắp xếp logic, chia đoạn rõ) + liên kết (từ nối, từ thay thế)."
+
+  - id: lr
+    front: LR – Lexical Resource
+    back: Vốn từ vựng – độ rộng, dùng đúng nghĩa, đúng collocation, đúng chính tả.
+
+  - id: gra
+    front: GRA – Grammatical Range & Accuracy
+    back: Ngữ pháp **đa dạng** (câu đơn, ghép, phức) và **chính xác**.
+
+  - id: criteria-weight
+    front: Trọng số 4 tiêu chí
+    back: Ngang nhau, mỗi tiêu chí 25%; điểm bài = trung bình cộng 4 tiêu chí.
+
+  - id: task-length
+    front: Độ dài & thời gian Task 1 / Task 2
+    back: "Task 1: ≥150 từ, ~20 phút · Task 2: ≥250 từ, ~40 phút (tổng 60 phút)."
+
+  - id: band5-key
+    front: Bốn điểm cốt lõi để lên band 5
+    back: Trả lời đúng đề · chia đoạn rõ · từ vựng đủ dùng · có cố gắng dùng câu phức.
+
+  - id: good-idea
+    front: Một ý tưởng "tốt" trong IELTS Writing
+    back: "Trả lời đúng câu hỏi của đề + được phát triển sâu, thuyết phục (không cần độc lạ)."
+
+  - id: course-roadmap
+    front: Lộ trình khóa học
+    back: Nền tảng (câu, đoạn, bài luận) → Task 1 → Task 2, xen kẽ thực hành viết.
+
+  - id: powers
+    front: POWERS
+    back: Tên phương pháp làm bài được giới thiệu trong khóa (chi tiết các bước nằm trong video bài giảng).
+
+  - id: brainstorm-methods
+    front: 3 kỹ thuật brainstorming cho Task 2
+    back: Journalistic Questions · Listing · Clustering

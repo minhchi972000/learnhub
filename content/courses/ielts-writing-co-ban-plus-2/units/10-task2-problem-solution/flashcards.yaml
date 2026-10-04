@@ -1,0 +1,75 @@
+cards:
+  - id: three-variants
+    front: "3 biến thể Problem – Solution"
+    back: "**Causes – Solutions**, **Effects – Solutions** (effects tiêu cực), **Causes – Effects** (tích cực hoặc tiêu cực)."
+    example: "Why is this happening? What can be done? → Causes – Solutions"
+
+  - id: cause-vs-effect
+    front: "Đoạn Causes vs đoạn Effects"
+    back: "Causes trả lời **WHY**; Effects mô tả **quá trình** dẫn tới hậu quả."
+    example: "Cause: Busy schedules keep young people away from home. / Effect: Family bonds could be weakened."
+
+  - id: solution-checklist-card
+    front: "Checklist một Solution tốt"
+    back: "**Who** takes action? – **What** action? – **How effective**? – **Match** causes/effects?"
+    example: "Parents should cook at home so that children eat healthier food."
+
+  - id: intro-effects-solutions
+    front: "Mở bài – Effects – Solutions"
+    back: "*In this essay, some negative effects of X will be discussed before possible solutions will be proposed.*"
+    example: "In this essay, some negative effects of childhood obesity will be discussed before possible solutions will be proposed."
+
+  - id: intro-causes-effects-card
+    front: "Mở bài – Causes – Effects"
+    back: "*In this essay, the reasons why X happened and its effects will be discussed.*"
+    example: "In this essay, the reasons why childhood obesity happened and its effects will be discussed."
+
+  - id: intro-causes-solutions
+    front: "Mở bài – Causes – Solutions"
+    back: "*In this essay, the reasons why X happened will be discussed before some possible solutions will be proposed.*"
+    example: "In this essay, the reasons why global warming happened will be discussed before some possible solutions will be proposed."
+
+  - id: conclusion-effects-solutions
+    front: "Kết bài – Effects – Solutions"
+    back: "*In conclusion, the negative outcomes of X could include + N. In order to…, it is recommended that…*"
+    example: "In conclusion, the negative outcomes of childhood obesity could relate to both physical and mental health."
+
+  - id: conclusion-causes-effects
+    front: "Kết bài – Causes – Effects"
+    back: "*In conclusion, the main factor that leads to X is that S V. This can lead to + [effect].*"
+    example: "In conclusion, the main factor that leads to obesity is that children eat too much fast food. This can lead to serious health problems."
+
+  - id: conclusion-causes-solutions
+    front: "Kết bài – Causes – Solutions"
+    back: "*In conclusion, the main factor that contributes to the problem can be + [cause]. In order to…, it is recommended that…*"
+    example: "In conclusion, the main factor that contributes to the problem can be poor eating habits. In order to limit fast food, it is recommended that parents cook at home."
+
+  - id: causes-phrases
+    front: "Cụm dẫn đoạn Causes"
+    back: "*There are some reasons why + S V.* / *One/Another possible reason is that + S V.*"
+    example: "One possible reason is that people use electronic devices before going to sleep."
+
+  - id: effects-phrases
+    front: "Cụm dẫn đoạn Effects"
+    back: "*X can lead to / result in + N/V-ing.* / *One/Another expected consequence of X is that + S V.*"
+    example: "Another expected consequence of lacking sleep is that it reduces work performance."
+
+  - id: solutions-phrases
+    front: "Cụm dẫn đoạn Solutions"
+    back: "*There are several ways to address + N.* / *It is important for X to + V.*"
+    example: "It is important for parents to encourage their children to take regular exercise."
+
+  - id: because-of-card
+    front: "Because of / As a result of"
+    back: "+ **N / V-ing**, chỉ nhân – quả. Nếu dùng V-ing, hai vế phải **cùng chủ ngữ**."
+    example: "As a result of walking in the rain, she caught a cold."
+
+  - id: so-that-card
+    front: "So that"
+    back: "+ **mệnh đề (S V)**, chỉ **mục đích** của giải pháp. Không dùng *because* cho mục đích."
+    example: "People should avoid caffeine before bedtime so that they can sleep better."
+
+  - id: by-doing-so
+    front: "Nêu hiệu quả của giải pháp"
+    back: "*By doing so, S V.* / *Doing so will + V.*"
+    example: "Doing so will help children reduce their fat and sugar intake."

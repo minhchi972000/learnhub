@@ -1,0 +1,125 @@
+questions:
+  - id: identify-causes-solutions
+    type: single
+    prompt: "*Fewer young people are choosing to become teachers. Why is this happening? What can be done to attract more people to this job?* Đây là biến thể nào?"
+    options:
+      - "Causes – Effects"
+      - "Effects – Solutions"
+      - "Causes – Solutions"
+      - "Advantages & Disadvantages"
+    answer: 2
+    explanation: "*Why is this happening?* hỏi nguyên nhân; *What can be done…?* hỏi giải pháp → **Causes – Solutions**."
+
+  - id: identify-effects-solutions
+    type: single
+    prompt: "*Many people now spend hours on social media every day. What problems can this cause, and how can they be solved?* Đây là biến thể nào?"
+    options:
+      - "Causes – Solutions"
+      - "Effects – Solutions"
+      - "Causes – Effects"
+      - "Discuss both views"
+    answer: 1
+    explanation: "*What problems can this cause* = hậu quả (tiêu cực); *how can they be solved* = giải pháp → **Effects – Solutions**."
+
+  - id: identify-causes-effects
+    type: single
+    prompt: "*More and more people are living alone. What are the reasons for this, and what effects does it have on society?* Đây là biến thể nào?"
+    options:
+      - "Causes – Effects"
+      - "Effects – Solutions"
+      - "Causes – Solutions"
+      - "Opinion"
+    answer: 0
+    explanation: "*Reasons* = nguyên nhân; *effects on society* = hệ quả → **Causes – Effects**."
+
+  - id: effects-negative
+    type: true_false
+    prompt: "Trong biến thể Effects – Solutions, *effects* được hiểu là hậu quả **tiêu cực**."
+    answer: true
+    explanation: "Chỉ hậu quả tiêu cực mới cần giải pháp. Còn ở Causes – Effects, hệ quả có thể tích cực hoặc tiêu cực tùy đề."
+
+  - id: causes-why
+    type: fill
+    prompt: "Đoạn Causes tập trung trả lời câu hỏi nào xuyên suốt? (một từ tiếng Anh)"
+    answer: [why, "why?"]
+    explanation: "Đoạn Causes trả lời **WHY** – giải thích lý do sự việc xảy ra. Đoạn Effects mô tả quá trình dẫn tới hậu quả."
+
+  - id: solution-checklist
+    type: multi
+    prompt: "Những câu hỏi nào thuộc checklist một giải pháp tốt?"
+    options:
+      - "Who takes action?"
+      - "What action is taken?"
+      - "How much does the writer like it?"
+      - "How effective is it?"
+      - "Do the solutions match the causes/effects?"
+    answer: [0, 1, 3, 4]
+    explanation: "4 tiêu chí: **Who – What – How effective – Match**. Sở thích cá nhân của người viết không phải tiêu chí."
+
+  - id: solution-missing-who
+    type: single
+    prompt: "*Limiting screen time every evening helps children sleep better.* Giải pháp này còn thiếu yếu tố nào?"
+    options:
+      - "Who takes action?"
+      - "What action is taken?"
+      - "How effective is it?"
+      - "Không thiếu gì"
+    answer: 0
+    explanation: "Đã có hành động (limit screen time) và hiệu quả (sleep better) nhưng **không rõ ai** thực hiện. Sửa: *Parents should limit their children's screen time every evening so that they can sleep better.*"
+
+  - id: solution-vague-what
+    type: true_false
+    prompt: "*The government should do something to solve traffic jams.* là một giải pháp đạt yêu cầu vì đã có người thực hiện (the government)."
+    answer: false
+    explanation: "*Do something* quá chung chung – thiếu **What** (hành động cụ thể) và thiếu **How effective**. Ví dụ tốt hơn: *The government should invest in more bus routes so that fewer people need to drive.*"
+
+  - id: intro-causes-effects
+    type: single
+    prompt: "Câu nào phù hợp cho mở bài **Causes – Effects**?"
+    options:
+      - "In this essay, some negative effects of X will be discussed before possible solutions will be proposed."
+      - "In this essay, the reasons why X happened and its effects will be discussed."
+      - "In this essay, the reasons why X happened will be discussed before some possible solutions will be proposed."
+      - "In this essay, some benefits and drawbacks of X will be examined."
+    answer: 1
+    explanation: "Causes – Effects: *the reasons why X happened and its effects will be discussed*. Câu 1 là Effects – Solutions, câu 3 là Causes – Solutions, câu 4 là Adv/Disadv."
+
+  - id: result-in-effects
+    type: fill
+    prompt: "Điền giới từ: *A lack of sleep can result ___ poor concentration at work.*"
+    answer: [in]
+    explanation: "*X can lead to / result **in** + N/V-ing* – cụm dẫn cho đoạn Effects."
+
+  - id: so-that-purpose
+    type: fill
+    prompt: "Điền cụm từ (hai từ): *Cities should build more cycle lanes ___ people can travel safely by bike.*"
+    answer: [so that]
+    explanation: "Vế sau là **mục đích** của giải pháp và là một mệnh đề → *so that* + S V."
+
+  - id: because-of-noun
+    type: single
+    prompt: "Chọn câu **đúng**."
+    options:
+      - "Because of the air is polluted, many people wear masks."
+      - "Because of air pollution, many people wear masks."
+      - "Because air pollution, many people wear masks."
+      - "Because of polluting, the air makes people wear masks."
+    answer: 1
+    explanation: "*Because of* + **danh từ** (*air pollution*). *Because* mới đi với mệnh đề. Câu 4 sai vì V-ing sau *because of* phải cùng chủ ngữ với vế sau."
+
+  - id: because-vs-so-that
+    type: true_false
+    prompt: "Câu *Students should go to bed early because they can concentrate better in class.* dùng đúng liên từ."
+    answer: false
+    explanation: "Vế sau là **mục đích** (để tập trung tốt hơn), không phải nguyên nhân → phải dùng *so that*: *…so that they can concentrate better in class.*"
+
+  - id: body-phrases
+    type: multi
+    prompt: "Cụm nào phù hợp để mở đầu đoạn **Solutions**?"
+    options:
+      - "There are several ways to address this problem."
+      - "One possible reason is that…"
+      - "It is important for the government to…"
+      - "One expected consequence of this is that…"
+    answer: [0, 2]
+    explanation: "Solutions: *There are several ways to address… / It is important for X to…*. *One possible reason* dùng cho Causes; *One expected consequence* dùng cho Effects."

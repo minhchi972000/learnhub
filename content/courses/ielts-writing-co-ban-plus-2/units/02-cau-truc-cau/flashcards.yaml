@@ -1,0 +1,77 @@
+cards:
+  - id: clause
+    front: Mệnh đề (clause)
+    back: Nhóm từ có **chủ ngữ + động từ**; động từ là bắt buộc.
+    example: He buys some flowers. (✅ mệnh đề) – He some flowers. (❌ thiếu V)
+
+  - id: independent-clause
+    front: Mệnh đề độc lập
+    back: Có S + V, đứng một mình vẫn **trọn nghĩa**.
+    example: Most kids like pizza.
+
+  - id: dependent-clause
+    front: Mệnh đề phụ thuộc
+    back: "Bắt đầu bằng liên từ phụ thuộc (*when, while, although, if, because, before…*) → **chưa trọn nghĩa**."
+    example: While I was driving to work…
+
+  - id: simple-sentence
+    front: Câu đơn – công thức & biến thể
+    back: "**1 mệnh đề độc lập**; biến thể SV, SVV, SSV, SSVV."
+    example: Maria and her sister often have Maths on Monday. (SSV)
+
+  - id: sentence-fragments
+    front: 4 lỗi khiến câu không hoàn chỉnh
+    back: Thiếu động từ · thiếu chủ ngữ · chỉ có mệnh đề phụ thuộc · chỉ có cụm từ.
+    example: "❌ During the pandemic. ❌ If she comes."
+
+  - id: compound-sentence
+    front: Câu ghép – công thức
+    back: "MĐ độc lập **, + FANBOYS +** MĐ độc lập"
+    example: It was raining, so the match was postponed.
+
+  - id: fanboys
+    front: FANBOYS
+    back: "**F**or (vì) · **A**nd (và) · **N**or (và không) · **B**ut (nhưng) · **O**r (hoặc) · **Y**et (nhưng – bất ngờ) · **S**o (vì vậy)"
+
+  - id: fanboys-priority
+    front: Liên từ FANBOYS nên ưu tiên ở trình độ cơ bản
+    back: "**and, but, so, or**"
+
+  - id: for-vs-so
+    front: for vs so
+    back: "*for* + **nguyên nhân** · *so* + **kết quả**"
+    example: I prefer cats, for they are quiet. / Cats are quiet, so I prefer them.
+
+  - id: complex-sentence
+    front: Câu phức – công thức
+    back: "**1** MĐ độc lập + **≥1** MĐ phụ thuộc; ý chính nằm ở MĐ độc lập."
+    example: Although he was wealthy, he was still unhappy.
+
+  - id: complex-comma
+    front: Dấu phẩy trong câu phức
+    back: "MĐ phụ thuộc **đứng trước → có dấu phẩy**; **đứng sau → không dấu phẩy**."
+    example: If it rains, we will stay in. / We will stay in if it rains.
+
+  - id: dependent-clause-types
+    front: 5 loại mệnh đề phụ thuộc hay dùng
+    back: "Thời gian (when, while, before, after, as soon as) · Nguyên nhân (because, as) · Điều kiện (if) · Nơi chốn (where, wherever) · Nhượng bộ (although, even though, while)"
+
+  - id: future-time-clause
+    front: Thì trong mệnh đề thời gian/điều kiện nói về tương lai
+    back: "Mệnh đề chính dùng *will*, mệnh đề sau *when/before/as soon as/if* dùng **hiện tại đơn**."
+    example: I will call you before I leave.
+
+  - id: academic-language
+    front: 3 đặc trưng ngôn ngữ học thuật
+    back: Giọng trung lập · động từ đơn thay phrasal verb · dùng collocation
+    example: throw away trashy stuff → dispose of unwanted items; get off the bicycle → dismount
+
+  - id: collocation-types
+    front: 6 dạng collocation
+    back: Adj + N · V + N · N + N · V + Prep · V + Adv · Adv + Adj
+    example: booming economy · launch a product · market research · filled with · go online · happily married
+
+  - id: hedging-tools
+    front: 4 công cụ hedging
+    back: "**seem/appear to + V** · **can/could/may/might + V-inf** · trạng từ (*probably, possibly, evidently, often, usually*) · **There is a possibility/tendency/evidence that + S V**"
+    example: Planting trees could help reduce air pollution.

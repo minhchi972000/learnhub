@@ -1,0 +1,9 @@
+title: Tổng ôn & checklist
+summary: Quy trình làm bài 20 phút (Task 1) và 40 phút (Task 2), checklist trước khi viết và khi soát lỗi, bảng so sánh 3 dạng Task 1 và 4 dạng Task 2.
+lessons:
+  - slug: quy-trinh-va-checklist
+    title: Quy trình làm bài & checklist
+    file: 01-quy-trinh-va-checklist.md
+  - slug: bang-so-sanh-dang-bai
+    title: Bảng so sánh các dạng bài Task 1 & Task 2
+    file: 02-bang-so-sanh-dang-bai.md

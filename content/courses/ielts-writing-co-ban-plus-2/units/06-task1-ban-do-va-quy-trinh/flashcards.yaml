@@ -1,0 +1,95 @@
+cards:
+  - id: maps-overview
+    front: Overview của dạng Maps
+    back: "Nêu khái quát **sự thay đổi nổi bật nhất**; không số liệu chi tiết, không đánh giá tốt/xấu."
+    example: Overall, the largest changes involved transportation, including additional public parking and new roundabouts.
+
+  - id: maps-grouping
+    front: Nhóm thân bài dạng Maps
+    back: "Theo **thời gian** (ít chi tiết) hoặc theo **khu vực** (nhiều chi tiết); mỗi đoạn tả thay đổi lớn trước."
+    example: "Body 1: the hospital in 2007 · Body 2: the hospital in 2010"
+
+  - id: maps-tenses
+    front: Thì trong dạng Maps
+    back: "Quá khứ → quá khứ: **was/were + V3** · quá khứ → hiện tại: **has/have been + V3** · kế hoạch: **will be + V3**"
+    example: The outdoor pool has been removed, and an indoor pool has been constructed.
+
+  - id: maps-build
+    front: Xây dựng (Maps)
+    back: build, construct, add
+    example: Two small lanes were built to link Hospital Road with the new bus station.
+
+  - id: maps-remove
+    front: Phá dỡ (Maps)
+    back: remove, destroy
+    example: The theatre and shops near the park were destroyed.
+
+  - id: maps-replace
+    front: Thay thế (Maps)
+    back: "replace (A replaces B / B is replaced by A) · give place to"
+    example: The cafe and park gave place to a hotel and a golf course.
+
+  - id: maps-expand-narrow
+    front: Mở rộng / thu hẹp / giữ nguyên
+    back: "expand, widen · narrow · remain unchanged"
+    example: The changing room has been expanded, while the reception area remains unchanged.
+
+  - id: location-prepositions
+    front: Giới từ vị trí
+    back: "**in** the middle · **on/to** the left/right · **to/in** the north · **in** the south-east corner · next to · beside · close to · opposite"
+    example: A second changing room will be constructed in the south-east corner, next to a new cafe.
+
+  - id: diagram-overview
+    front: Overview của dạng Diagram
+    back: "**Số bước + bước đầu + bước cuối**."
+    example: Overall, there are 13 steps in the process, starting with catching fish and ending with selling it at fish shops.
+
+  - id: diagram-body-split
+    front: Chia thân bài Diagram
+    back: "Chia tại **bước chuyển quan trọng**, không chia đều máy móc; mô tả **tất cả** các bước."
+    example: "Body 1: drying → flattening · Body 2: soaking in tannin → completed products"
+
+  - id: sequence-start
+    front: Từ nối mở đầu quy trình
+    back: "The process begins when… · In the first stage, … · In the beginning of the process, …"
+    example: The process begins when fish are caught in nets.
+
+  - id: sequence-middle
+    front: Từ nối giữa quy trình
+    back: "Then · From this point · Following this · After that · The next stage is to… · In the next stage"
+    example: From this point, they are frozen and later thawed in fresh water.
+
+  - id: sequence-end
+    front: Từ nối kết thúc quy trình
+    back: "Finally · In the last stage · The process ends when…"
+    example: The process ends when the cups are labelled and sealed.
+
+  - id: process-vocab-transport
+    front: "Vận chuyển / thu hoạch / lưu trữ"
+    back: "transport, deliver, distribute, dispatch · harvest, pick, collect · store (v), storage (n)"
+    example: In the last stage, the final products are dispatched to supermarkets.
+
+  - id: process-vocab-treat
+    front: Động từ xử lý nguyên liệu
+    back: "wash, dry, sort, mix, soak, flatten, melt, slice, weigh, boil, fry, peel, sterilize, roast, package"
+    example: The skins are then soaked in more lime.
+
+  - id: passive-formula
+    front: Công thức câu bị động
+    back: "S + **be** (chia theo thì) + **V3** (+ by + tác nhân)"
+    example: Fresh oranges are delivered to a factory by truck.
+
+  - id: passive-be-table
+    front: be theo thì (bị động)
+    back: "HTĐ: is/are · QKĐ: was/were · HTHT: has/have been · TLĐ: will be · HTTD: is/are being · QKHT: had been"
+    example: A sports store will be built close to the changing area.
+
+  - id: passive-steps
+    front: Các bước chuyển sang bị động
+    back: "(1) Xác định S-V-O & thì → (2) O lên làm chủ ngữ → (3) thêm be → (4) V3 → (5) by + tác nhân (bỏ nếu là someone/people/they)"
+    example: "They use solid waste as animal feed. → The solid waste is used as animal feed."
+
+  - id: passive-no-object-rule
+    front: Khi nào giữ chủ động trong quy trình?
+    back: "Khi sau động từ còn tân ngữ hoặc động từ không có bị động: *go through, turn into, graze, take place*."
+    example: After the mixing finishes, the mixture goes through rollers and turns into dough sheets.

@@ -1,0 +1,14 @@
+title: "Task 1: Bản đồ & quy trình"
+summary: >-
+  Viết bài dạng Maps (bố cục, nhóm thông tin, thì, từ vựng thay đổi, giới từ vị trí) và dạng
+  Diagram mô tả quy trình (overview số bước, chia thân bài, từ nối trình tự), cùng câu bị động.
+lessons:
+  - slug: ban-do-maps
+    title: Bản đồ (Maps)
+    file: 01-ban-do-maps.md
+  - slug: quy-trinh-diagrams
+    title: Quy trình (Diagrams)
+    file: 02-quy-trinh-diagrams.md
+  - slug: cau-bi-dong
+    title: Câu bị động cho Maps & Diagrams
+    file: 03-cau-bi-dong.md

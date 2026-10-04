@@ -1,0 +1,70 @@
+cards:
+  - id: opinion-topic
+    front: "Topic (trong đề Opinion)"
+    back: "Phần đề **nêu ra một (hoặc hai) ý kiến** cần thảo luận."
+    example: "Some people think that university education should be free."
+
+  - id: opinion-task
+    front: "Task (trong đề Opinion)"
+    back: "Phần đề **yêu cầu người viết nêu quan điểm**."
+    example: "To what extent do you agree or disagree?"
+
+  - id: opinion-two-jobs
+    front: "Hai nhiệm vụ bắt buộc của bài Opinion"
+    back: "1) Nêu rõ **đồng ý / không đồng ý**; 2) **Giải thích lý do**."
+    example: "I strongly agree that university education should be free because…"
+
+  - id: general-statement-two-views
+    front: "Mẫu General statement (hai ý kiến)"
+    back: "*Some believe that + S V, while others claim that + S V.*"
+    example: "Some believe that books should be chosen, while others claim that using films and games is better."
+
+  - id: general-statement-debate
+    front: "Mẫu General statement (cuộc tranh luận)"
+    back: "*In today's world, there is a debate about whether + S V.*"
+    example: "In today's world, there is a debate about whether children should have smartphones."
+
+  - id: thesis-totally
+    front: "Thesis – totally agree/disagree"
+    back: "*I strongly agree/disagree that + S V.* / *I totally agree with + N/V-ing.*"
+    example: "I strongly agree that cities should invest more in public transport."
+
+  - id: thesis-partly
+    front: "Thesis – partly agree/disagree"
+    back: "*In my opinion, while A…, B plays a more important role.*"
+    example: "In my opinion, while online courses are flexible, classroom learning plays a more important role."
+
+  - id: while-although-grammar
+    front: "Ngữ pháp While / Although"
+    back: "*While/Although + S V, S V.* – mệnh đề phụ là phần **nhượng bộ**; **không** thêm *but*."
+    example: "Although cars are convenient, public transport is better for the environment."
+
+  - id: opinion-conclusion
+    front: "Mẫu Restatement (kết bài)"
+    back: "*In conclusion, while/although S V, S V.*"
+    example: "In conclusion, although cars are convenient, I believe that public transport should be encouraged."
+
+  - id: recommendation
+    front: "Mẫu Recommendation (kết bài)"
+    back: "*It is recommended that + S (should) V.*"
+    example: "It is recommended that the government lower bus fares."
+
+  - id: however-i-still-argue
+    front: "Mở đoạn thân bài nêu quan điểm chính (partly)"
+    back: "*However, I still argue that + S V.*"
+    example: "However, I still argue that there are other factors that are as important as salary."
+
+  - id: err-in-my-opinion-many
+    front: "Lỗi: *In my opinion, many people argue that…*"
+    back: "Mâu thuẫn: *In my opinion* phải đi với quan điểm **của bạn**, không phải ý kiến người khác."
+    example: "✅ In my opinion, zoos should be closed."
+
+  - id: err-repeat-opinion
+    front: "Lỗi: *In my opinion, I strongly believe that…*"
+    back: "Lặp ý – chỉ dùng **một** cụm thể hiện quan điểm."
+    example: "✅ I strongly believe that zoos should be closed."
+
+  - id: err-not-paraphrase
+    front: "Lỗi: General statement không paraphrase đề"
+    back: "Câu kiểu *This debate is really interesting.* không cho biết bài bàn về gì → phải nhắc lại nội dung Topic."
+    example: "✅ Many believe that women should be allowed to join the army, while others think only men should."

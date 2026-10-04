@@ -1,0 +1,20 @@
+title: "Task 1: Khung chung & biểu đồ xu hướng"
+summary: >-
+  Bố cục chung của bài Task 1, phân tích đề 3 bước, viết mở bài – overview, chọn đặc điểm
+  nổi bật, nhóm thông tin, chia thì và từ vựng mô tả xu hướng cho biểu đồ có thay đổi theo thời gian.
+lessons:
+  - slug: khung-chung-task-1
+    title: Khung chung bài Task 1 & phân tích đề 3 bước
+    file: 01-khung-chung-task-1.md
+  - slug: mo-bai-paraphrase-va-overview
+    title: Mở bài – paraphrase & overview
+    file: 02-mo-bai-paraphrase-va-overview.md
+  - slug: dac-diem-noi-bat-nhom-thong-tin-va-thi
+    title: Đặc điểm nổi bật, nhóm thông tin & thì động từ
+    file: 03-dac-diem-noi-bat-nhom-thong-tin-va-thi.md
+  - slug: tu-vung-xu-huong-va-muc-do
+    title: Từ vựng xu hướng & mức độ thay đổi
+    file: 04-tu-vung-xu-huong-va-muc-do.md
+  - slug: loi-tu-vung-va-checklist
+    title: Lỗi từ vựng thường gặp & checklist
+    file: 05-loi-tu-vung-va-checklist.md

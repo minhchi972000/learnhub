@@ -1,0 +1,122 @@
+questions:
+  - id: with-opinion-prompts
+    type: multi
+    prompt: "Những đề nào thuộc dạng **With opinion**?"
+    options:
+      - "What are the advantages and disadvantages of owning a pet?"
+      - "Do the advantages of electric cars outweigh the disadvantages?"
+      - "Discuss the advantages and disadvantages of living alone."
+      - "The benefits of social media outweigh its drawbacks. Do you agree or disagree?"
+      - "Describe the advantages and disadvantages of fast food. Give your own opinion."
+    answer: [1, 3, 4]
+    explanation: "Dấu hiệu có hỏi ý kiến: *outweigh*, *Do you agree or disagree?*, *Give your own opinion*. Hai đề còn lại chỉ yêu cầu trình bày ưu – nhược → Without opinion."
+
+  - id: opinion-three-times
+    type: multi
+    prompt: "Với đề With opinion, quan điểm của người viết cần xuất hiện ở những vị trí nào?"
+    options:
+      - "Thesis statement"
+      - "General statement"
+      - "Topic sentence của đoạn thân bài mà người viết ủng hộ"
+      - "Restatement (câu đầu kết bài)"
+      - "Recommendation"
+    answer: [0, 2, 3]
+    explanation: "Quan điểm lặp lại **3 lần**: Thesis, Topic sentence đoạn ủng hộ, Restatement. General statement chỉ paraphrase đề; Recommendation chỉ là đề xuất chung."
+
+  - id: unaffected-sentences
+    type: true_false
+    prompt: "General statement được viết giống nhau dù đề có hỏi ý kiến hay không."
+    answer: true
+    explanation: "General statement luôn chỉ có nhiệm vụ paraphrase đề, nên không phụ thuộc With/Without opinion."
+
+  - id: outweigh-meaning
+    type: single
+    prompt: "Đề có cụm *Do the advantages outweigh the disadvantages?* yêu cầu bạn làm gì?"
+    options:
+      - "Chỉ liệt kê các ưu điểm"
+      - "Trình bày hai mặt và cho biết mặt nào lớn hơn"
+      - "Chỉ nói về nhược điểm"
+      - "Đề xuất giải pháp cho các nhược điểm"
+    answer: 1
+    explanation: "*Outweigh* = lớn hơn/nặng hơn. Bạn phải xét cả hai mặt rồi nêu rõ mặt nào quan trọng hơn."
+
+  - id: thesis-without-opinion
+    type: single
+    prompt: "Thesis nào phù hợp với đề *What are the advantages and disadvantages of online banking?*"
+    options:
+      - "While online banking has some drawbacks, I still believe its positive aspects are more significant."
+      - "In this essay, some benefits and drawbacks of online banking will be examined."
+      - "I strongly agree that online banking is dangerous."
+      - "Online banking is used by many people."
+    answer: 1
+    explanation: "Đề không hỏi ý kiến → dùng mẫu trung lập *In this essay, some benefits and drawbacks of X will be examined.* Câu 1 dành cho đề With opinion."
+
+  - id: synonyms-disadvantages
+    type: multi
+    prompt: "Chọn các từ có thể thay cho **disadvantages**."
+    options: [drawback, strength, weakness, negative aspect, benefit, limit]
+    answer: [0, 2, 3, 5]
+    explanation: "Disadvantages ≈ drawback, weakness, negative aspect, limit. *Strength* và *benefit* là từ đồng nghĩa của advantages."
+
+  - id: topic-sentence-pair
+    type: single
+    prompt: "Topic sentence đoạn 2 là *However, working abroad can result in two weaknesses.* Topic sentence đoạn 1 phù hợp nhất là gì?"
+    options:
+      - "On the other hand, working abroad has two limits."
+      - "To begin with, there are two strengths of working abroad."
+      - "Working abroad has no positive outcomes."
+      - "Firstly, working abroad is expensive."
+    answer: 1
+    explanation: "*To begin with* đi cặp với *However*, và đoạn 1 phải nói mặt ngược lại (strengths) so với đoạn 2 (weaknesses)."
+
+  - id: result-in-prep
+    type: fill
+    prompt: "Điền giới từ: *Working long hours can result ___ serious health problems.*"
+    answer: [in]
+    explanation: "Cụm cố định *result in* + N = dẫn đến."
+
+  - id: of-ving
+    type: fill
+    prompt: "Chia động từ: *There are two strengths of ___ (travel) alone.*"
+    answer: [traveling, travelling]
+    explanation: "Sau giới từ *of* dùng N hoặc **V-ing** → *travelling/traveling*."
+
+  - id: clustering-order
+    type: single
+    prompt: "Bước **đầu tiên** của kỹ thuật Clustering là gì?"
+    options:
+      - "Viết các ý hoàn chỉnh"
+      - "Kẻ đường nối các cụm từ liên quan"
+      - "Gạch chân từ khóa trên đề"
+      - "Viết chủ đề lớn ở giữa tờ giấy và rẽ nhánh"
+    answer: 2
+    explanation: "Thứ tự: gạch chân từ khóa → viết chủ đề ở giữa và rẽ nhánh → nối các cụm liên quan → viết ý hoàn chỉnh."
+
+  - id: referencing-criterion
+    type: single
+    prompt: "Dùng tốt Referencing language giúp cải thiện tiêu chí chấm nào nhiều nhất?"
+    options:
+      - "Task Response"
+      - "Coherence & Cohesion"
+      - "Lexical Resource"
+      - "Grammatical Range & Accuracy"
+    answer: 1
+    explanation: "Referencing language giữ mạch thông tin liền lạc và tránh lặp từ → trực tiếp nâng điểm **Coherence & Cohesion**."
+
+  - id: this-whole-idea
+    type: fill
+    prompt: "Điền một từ để nhắc lại cả ý phía trước: *Many shops have moved online. ___ means that fewer people visit city centres.*"
+    answer: [this]
+    explanation: "*This* ở đầu câu dùng để nhắc lại **cả một ý** đã nói trước đó."
+
+  - id: their-possessive
+    type: fill
+    prompt: "Điền một từ: *Some parents give ___ children too much screen time.*"
+    answer: [their]
+    explanation: "Trước danh từ *children* cần tính từ sở hữu → *their* (sở hữu của *parents*)."
+
+  - id: they-ambiguous
+    type: true_false
+    prompt: "Khi câu trước có hai danh từ số nhiều (ví dụ *companies* và *workers*), nên dùng *these + N* thay vì *they* để tránh mơ hồ."
+    answer: true
+    explanation: "*They* có thể khiến người đọc không biết bạn nói về nhóm nào; *these businesses* làm rõ đối tượng."

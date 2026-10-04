@@ -1,0 +1,80 @@
+cards:
+  - id: without-opinion-signal
+    front: "Dấu hiệu đề Without opinion"
+    back: "*Discuss the advantages and disadvantages of…* / *What are the advantages and disadvantages of…?*"
+    example: "What are the advantages and disadvantages of taking a gap year?"
+
+  - id: with-opinion-signal
+    front: "Dấu hiệu đề With opinion"
+    back: "*outweigh* / *Give your own opinion* / *Do you agree or disagree?*"
+    example: "Do the advantages of globalisation outweigh the disadvantages?"
+
+  - id: opinion-three-places
+    front: "Quan điểm xuất hiện 3 lần (đề With opinion)"
+    back: "1) Thesis statement; 2) Topic sentence của đoạn ủng hộ; 3) Restatement (câu đầu kết bài)."
+    example: "…I still believe its positive aspects are more significant. → On the other hand, there are two positive aspects to… → In conclusion, although…, I would believe that…"
+
+  - id: adv-synonyms
+    front: "Từ đồng nghĩa của **advantages**"
+    back: "benefit, strength, strong point, positive aspect, advantageous aspect"
+    example: "Another advantageous aspect of working from home is that it saves travel time."
+
+  - id: disadv-synonyms
+    front: "Từ đồng nghĩa của **disadvantages**"
+    back: "drawback, weakness, limit, negative aspect, disadvantageous aspect"
+    example: "The first drawback of online news is that it is often unreliable."
+
+  - id: thesis-without
+    front: "Thesis – Without opinion"
+    back: "*In this essay, some benefits and drawbacks of X will be examined.*"
+    example: "In this essay, some benefits and drawbacks of reading online news will be examined."
+
+  - id: thesis-with
+    front: "Thesis – With opinion"
+    back: "*While there are some drawbacks of X, I still believe its positive aspects are more significant.*"
+    example: "While there are some drawbacks of working for large companies, I still believe its positive aspects are more significant."
+
+  - id: conclusion-without
+    front: "Restatement – Without opinion"
+    back: "*In conclusion, although…, there still exist(s)…*"
+    example: "In conclusion, although online news is convenient, there still exist some weaknesses to it."
+
+  - id: conclusion-with
+    front: "Restatement – With opinion"
+    back: "*In conclusion, although…, I would believe that…*"
+    example: "In conclusion, although big companies put pressure on workers, I would believe that their benefits are greater."
+
+  - id: ts-pair-one-hand
+    front: "Cặp Topic sentence 1"
+    back: "*On the one hand, there are two drawbacks of N/V-ing.* ↔ *On the other hand, there are two positive aspects to N/V-ing.*"
+    example: "On the one hand, there are two drawbacks of studying abroad."
+
+  - id: ts-pair-begin
+    front: "Cặp Topic sentence 2"
+    back: "*To begin with, there are two strengths of N/V-ing.* ↔ *However, N/V-ing can result in two weaknesses.*"
+    example: "However, space tourism can result in two negative outcomes."
+
+  - id: si-two-ideas
+    front: "Dẫn Supporting idea – Adapted FSF (2 ý)"
+    back: "*The first benefit of N/V-ing is that S V.* → *Another advantageous aspect of N/V-ing is that S V.*"
+    example: "The first benefit of space tourism is that it provides new chances to learn about the universe."
+
+  - id: sd-explain
+    front: "Dẫn Supporting detail – giải thích"
+    back: "*To explain, S V.* / *An explanation for this is that S V.* / *This is because S V.*"
+    example: "An explanation for this is that people can read news whenever they want."
+
+  - id: clustering-steps
+    front: "4 bước Clustering"
+    back: "Gạch chân từ khóa → viết chủ đề ở giữa và rẽ nhánh → nối các cụm liên quan → viết ý hoàn chỉnh (đi từ chi tiết lên ý lớn)."
+    example: "talk to native speakers + improve fluency → Students may develop special language skills."
+
+  - id: referencing-forms
+    front: "7 dạng Referencing language"
+    back: "*this/that + N*, *these/those + N*, *it*, *they* (chủ ngữ), *them* (tân ngữ), *its/their + N*, *This* đầu câu (nhắc cả ý)."
+    example: "Workers face tight deadlines. This forces them to work overtime."
+
+  - id: these-businesses
+    front: "Khi *they* gây mơ hồ"
+    back: "Viết rõ **these + N** (vd. *these businesses*) rồi mới dùng *they* ở câu sau."
+    example: "These businesses have strong financial resources. As a result, they offer high salaries."

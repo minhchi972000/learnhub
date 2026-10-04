@@ -1,0 +1,137 @@
+questions:
+  - id: task1-no-conclusion
+    type: true_false
+    prompt: "Bài Task 1 cần có đoạn Conclusion nêu ý kiến cá nhân về số liệu."
+    answer: false
+    explanation: "Task 1 gồm Introduction (paraphrase + overview) → Body 1 → Body 2. **Không** viết Conclusion và **không** nêu ý kiến."
+
+  - id: overview-no-data
+    type: single
+    prompt: "Câu nào phù hợp làm **Overview** cho Task 1?"
+    options:
+      - "Overall, the number of tourists rose from 2 million to 5 million."
+      - "Overall, tourism grew over the period, and Spain was the most popular destination."
+      - "In my opinion, tourism is good for the economy."
+      - "In conclusion, tourism increased by 150%."
+    answer: 1
+    explanation: "Overview nêu đặc điểm nổi bật **không kèm số liệu**, mở bằng *Overall, …*. Câu 1 và 4 có số liệu; câu 3 nêu ý kiến."
+
+  - id: task1-chart-type
+    type: single
+    prompt: "Một biểu đồ cột thể hiện tỷ lệ người dùng mạng xã hội ở 5 quốc gia **trong năm 2020**. Đây là dạng nào?"
+    options:
+      - "Biểu đồ xu hướng"
+      - "Biểu đồ so sánh"
+      - "Bản đồ"
+      - "Quy trình"
+    answer: 1
+    explanation: "Chỉ có một thời điểm → **không có thay đổi theo thời gian** → dạng so sánh."
+
+  - id: process-tense
+    type: fill
+    prompt: "Bài quy trình (process): *First, the leaves ___ (collect) by hand.* Điền động từ ở dạng đúng."
+    answer: [are collected]
+    explanation: "Process thường dùng **hiện tại đơn bị động** (*am/is/are + V3*): *the leaves are collected*. Bỏ *by + người* nếu tác nhân không quan trọng."
+
+  - id: number-amount
+    type: single
+    prompt: "Chọn cụm đúng."
+    options:
+      - "the amount of students"
+      - "the number of water"
+      - "the number of cars"
+      - "the amount of people"
+    answer: 2
+    explanation: "**Number** đi với danh từ đếm được (*cars, students, people*); **amount** đi với danh từ không đếm được (*water, money*)."
+
+  - id: comma-subordinate
+    type: true_false
+    prompt: "Khi mệnh đề phụ thuộc đứng **trước** mệnh đề chính, ta đặt dấu phẩy giữa hai mệnh đề."
+    answer: true
+    explanation: "Ví dụ: *Although he was wealthy, he was still unhappy.* Nếu mệnh đề phụ đứng sau thì không cần dấu phẩy."
+
+  - id: identify-task2-types
+    type: single
+    prompt: "*Some people think governments should spend money on space exploration, while others think this money should be used to solve problems on Earth. Discuss both views and give your own opinion.* Đây là dạng nào?"
+    options:
+      - "Opinion"
+      - "Advantages & Disadvantages"
+      - "Discuss both views"
+      - "Causes – Solutions"
+    answer: 2
+    explanation: "Đề đưa ra **hai ý kiến** của hai nhóm người và yêu cầu *Discuss both views and give your own opinion*."
+
+  - id: outweigh-opinion
+    type: true_false
+    prompt: "Đề *Do the advantages of X outweigh the disadvantages?* không yêu cầu người viết nêu ý kiến."
+    answer: false
+    explanation: "*Outweigh* buộc bạn đánh giá mặt nào lớn hơn → đề **có hỏi ý kiến**, quan điểm phải xuất hiện 3 lần (thesis, topic sentence đoạn ủng hộ, restatement)."
+
+  - id: paragraph-structures
+    type: multi
+    prompt: "Những mô tả nào về cấu trúc đoạn thân bài là **chính xác**?"
+    options:
+      - "I-E-E-E: 1 ý – Idea, Explanation, Example, Elaborate"
+      - "FSF: 3 ý, chỉ phát triển kỹ ý đầu"
+      - "Adapted FSF: 2 ý, mỗi ý đều có supporting detail"
+      - "FSF: 2 ý, không cần supporting detail"
+    answer: [0, 1, 2]
+    explanation: "I-E-E-E = 1 ý; FSF = 3 ý (ý đầu quan trọng nhất được phát triển); Adapted FSF = 2 ý, mỗi ý có supporting detail."
+
+  - id: explanation-errors
+    type: single
+    prompt: "*Online learning is convenient. This is because it is very easy and convenient for learners.* Câu giải thích mắc lỗi gì?"
+    options:
+      - "Jump to conclusion"
+      - "Merry-go-round"
+      - "Off-topic"
+      - "Too specific"
+    answer: 1
+    explanation: "Câu giải thích chỉ lặp lại ý *convenient* mà không thêm thông tin mới → **Merry-go-round**."
+
+  - id: hedging-tools
+    type: multi
+    prompt: "Những công cụ nào là **hedging** (ngôn ngữ cẩn trọng)?"
+    options:
+      - "seem to + V"
+      - "always"
+      - "could + V"
+      - "There is a tendency that + S V"
+      - "definitely"
+    answer: [0, 2, 3]
+    explanation: "Hedging tránh khẳng định tuyệt đối: *seem/appear to, can/could/may/might, probably, there is a tendency/possibility/evidence that…*. Tránh *always*, *definitely*."
+
+  - id: so-that-review
+    type: fill
+    prompt: "Điền hai từ: *Schools should offer cooking classes ___ students can learn to prepare healthy meals.*"
+    answer: [so that]
+    explanation: "Vế sau là **mục đích** của giải pháp → *so that* + mệnh đề."
+
+  - id: argument-about-review
+    type: fill
+    prompt: "Điền một từ: *Recently, there has been an argument ___ whether homework should be banned.*"
+    answer: [about]
+    explanation: "Mẫu General statement của dạng Discussion: *there has been an argument **about** whether S V*."
+
+  - id: solution-checklist-review
+    type: multi
+    prompt: "Một giải pháp tốt trong bài Problem – Solution cần trả lời được những câu hỏi nào?"
+    options:
+      - "Ai thực hiện?"
+      - "Làm gì cụ thể?"
+      - "Hiệu quả ra sao?"
+      - "Có khớp với nguyên nhân/hậu quả không?"
+      - "Tốn bao nhiêu tiền chính xác?"
+    answer: [0, 1, 2, 3]
+    explanation: "Checklist: **Who – What – How effective – Match**. Không cần (và không nên bịa) con số chi phí."
+
+  - id: maps-present-perfect
+    type: single
+    prompt: "Bản đồ so sánh một khu vực **năm 2000 và hiện nay**. Câu nào dùng thì đúng?"
+    options:
+      - "The old factory was removing."
+      - "The old factory has been removed."
+      - "The old factory will remove."
+      - "The old factory removes."
+    answer: 1
+    explanation: "Thay đổi từ quá khứ đến hiện tại → **hiện tại hoàn thành** (thường ở bị động): *has been removed*."

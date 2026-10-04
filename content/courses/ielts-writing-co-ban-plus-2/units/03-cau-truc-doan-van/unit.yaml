@@ -1,0 +1,24 @@
+title: Cấu trúc đoạn văn & bài luận
+summary: Câu chủ đề, câu hỗ trợ, giải thích, ví dụ, 3 cấu trúc đoạn thân bài, mở bài – kết bài và kỹ năng brainstorming.
+lessons:
+  - slug: topic-sentence
+    title: Câu chủ đề (Topic sentence)
+    file: 01-topic-sentence.md
+  - slug: supporting-sentences-va-coherence
+    title: Supporting idea, supporting detail & tính mạch lạc
+    file: 02-supporting-sentences-va-coherence.md
+  - slug: viet-cau-giai-thich
+    title: Viết câu giải thích (Explanation)
+    file: 03-viet-cau-giai-thich.md
+  - slug: viet-vi-du
+    title: Viết ví dụ (Example) & Example checklist
+    file: 04-viet-vi-du.md
+  - slug: ba-cau-truc-doan-than-bai
+    title: Ba cấu trúc đoạn thân bài (I-E-E-E, FSF, Adapted FSF)
+    file: 05-ba-cau-truc-doan-than-bai.md
+  - slug: mo-bai-va-ket-bai
+    title: Mở bài & kết bài
+    file: 06-mo-bai-va-ket-bai.md
+  - slug: brainstorming
+    title: Kỹ năng brainstorming
+    file: 07-brainstorming.md

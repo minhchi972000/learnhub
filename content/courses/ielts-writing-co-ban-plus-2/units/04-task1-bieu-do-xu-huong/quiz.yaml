@@ -1,0 +1,144 @@
+questions:
+  - id: task1-no-conclusion
+    type: true_false
+    prompt: Một bài Writing Task 1 hoàn chỉnh nên kết thúc bằng một đoạn Conclusion ngắn tóm tắt lại biểu đồ.
+    answer: false
+    explanation: >-
+      Sai. Bố cục Task 1 chỉ gồm **Introduction (paraphrase + overview) → Body 1 → Body 2**.
+      Không viết Conclusion và không nêu ý kiến cá nhân.
+
+  - id: intro-components
+    type: multi
+    prompt: Đoạn Introduction của Task 1 gồm những thành phần nào?
+    options:
+      - Một câu paraphrase lại đề bài
+      - Một câu nêu ý kiến của người viết về số liệu
+      - Một đến hai câu overview nêu xu hướng chung / đặc điểm nổi bật
+      - Các số liệu cao nhất và thấp nhất của biểu đồ
+    answer: [0, 2]
+    explanation: >-
+      Mở bài = **1 câu paraphrase + 1–2 câu overview**. Không đưa ý kiến cá nhân, và overview
+      **không chứa số liệu cụ thể** – số liệu để dành cho thân bài.
+
+  - id: step-one-3w
+    type: single
+    prompt: "Trong bước 1 của phân tích đề (3W), yếu tố nào quyết định **thì của động từ** trong bài?"
+    options: [What, Where, When, Unit]
+    answer: 2
+    explanation: >-
+      **When** cho biết số liệu thuộc quá khứ, hiện tại hay tương lai, từ đó quyết định thì.
+      *Unit* thuộc bước 2 và quyết định cách gọi số lượng (percentage, number, amount…).
+
+  - id: step-two-elements
+    type: single
+    prompt: Bước 2 của quy trình phân tích đề Task 1 xác định những yếu tố nào?
+    options:
+      - What, Where, When
+      - Subjects of comparison và Unit
+      - Grouping và Main features
+      - Paraphrase và Overview
+    answer: 1
+    explanation: >-
+      Ba bước: (1) **3W** – What, Where, When; (2) **Subjects of comparison & Unit**;
+      (3) **Grouping & Main features**.
+
+  - id: overview-no-figures
+    type: true_false
+    prompt: "Câu sau là một câu overview phù hợp: *Overall, the price of coffee rose from $2 in 2000 to $5 in 2020.*"
+    answer: false
+    explanation: >-
+      Sai. Overview chỉ nêu khái quát và **không đưa số liệu**. Có thể viết: *Overall, the price
+      of coffee increased significantly over the period.*
+
+  - id: paraphrase-between
+    type: fill
+    prompt: "Đề bài: *…between 2004 and 2014.* Hoàn thành câu paraphrase: *The bar chart illustrates the number of tourists to Peru ___ 2004 to 2014.*"
+    answer: [from]
+    explanation: >-
+      Hai cụm thời gian là *from … to …* và *between … and …*. Đề đã dùng *between … and*, ta đổi
+      sang **from** … to … và không được trộn hai cụm (❌ *between 2004 to 2014*).
+
+  - id: main-features-choice
+    type: multi
+    prompt: Đâu là những đặc điểm nên ưu tiên khi chọn main features cho biểu đồ xu hướng?
+    options:
+      - Đối tượng có sự thay đổi lớn nhất
+      - Một con số ở giữa giai đoạn, không cao nhất cũng không thấp nhất
+      - Số liệu cao nhất hoặc thấp nhất
+      - Điểm giao cắt giữa hai đường
+      - Xu hướng của một năm ngắn trong khi cả giai đoạn đi ngược lại
+    answer: [0, 2, 3]
+    explanation: >-
+      Ưu tiên: thay đổi lớn nhất / ổn định nhất, số liệu cao nhất / thấp nhất, điểm đầu – cuối –
+      giao cắt và xu hướng chung. Một con số "giữa chừng" hay xu hướng của một giai đoạn ngắn
+      không phải đặc điểm nổi bật.
+
+  - id: grouping-by-subject
+    type: single
+    prompt: "Biểu đồ đường cho thấy lượng tiêu thụ **tea** và **coffee** tăng, còn **juice** giảm (1990–2010). Cách nhóm thân bài theo đối tượng nào hợp lý nhất?"
+    options:
+      - "Body 1: tea; Body 2: coffee và juice"
+      - "Body 1: tea và coffee; Body 2: juice"
+      - "Body 1: năm 1990; Body 2: tea, coffee và juice năm 2010"
+      - "Body 1: juice và tea; Body 2: coffee"
+    answer: 1
+    explanation: >-
+      Khi nhóm theo đối tượng, gom các đối tượng **có xu hướng giống nhau** vào một đoạn:
+      tea và coffee cùng tăng → Body 1; juice giảm → Body 2.
+
+  - id: tense-future-data
+    type: single
+    prompt: "Biểu đồ dự báo dân số đô thị đến năm 2050. Câu nào phù hợp nhất cho phần số liệu tương lai?"
+    options:
+      - The urban population increased to 6 billion in 2050.
+      - The urban population is predicted to increase to 6 billion in 2050.
+      - The urban population has increased to 6 billion in 2050.
+      - The urban population increases to 6 billion in 2050.
+    answer: 1
+    explanation: >-
+      Số liệu tương lai là **dự đoán**, nên dùng *is predicted / expected to + V*. Quá khứ đơn chỉ
+      dùng cho số liệu đã xảy ra; hiện tại đơn dùng khi biểu đồ **không có** thời gian.
+
+  - id: word-form-noun
+    type: fill
+    prompt: "Điền dạng đúng của từ *steady*: *There was a ___ increase in the number of cyclists between 2012 and 2018.*"
+    answer: [steady]
+    explanation: >-
+      Sau mạo từ *a* và trước danh từ *increase* cần **tính từ** → *a steady increase*
+      (quy tắc **danh – tính, động – trạng**).
+
+  - id: word-form-adverb
+    type: fill
+    prompt: "Điền dạng đúng của từ *sharp*: *Oil prices fell ___ after 2014.*"
+    answer: [sharply]
+    explanation: >-
+      Từ cần điền bổ nghĩa cho động từ *fell* nên phải là **trạng từ** → *fell sharply*.
+      ❌ *fell sharp*.
+
+  - id: number-or-amount
+    type: single
+    prompt: "Chọn cụm đúng: *___ water used by households dropped slightly in 2015.*"
+    options:
+      - The number of
+      - The amount of
+      - The numbers of
+      - A number of
+    answer: 1
+    explanation: >-
+      *Water* là danh từ **không đếm được** → dùng **the amount of**. *The number of* chỉ đi với
+      danh từ đếm được số nhiều (students, cars, visitors…).
+
+  - id: reach-peak-collocation
+    type: fill
+    prompt: "Hoàn thành: *Sales reached a ___ of 900 units in March.* (đạt đỉnh)"
+    answer: [peak]
+    explanation: >-
+      Cụm đúng: **reach a peak of + số liệu** hoặc **reach the highest point of + số liệu**.
+      Chú ý mạo từ: *a peak*, nhưng *the highest point*.
+
+  - id: end-of-period-preposition
+    type: true_false
+    prompt: "Cụm *in the end of the period* là cách diễn đạt đúng để nói \"vào cuối giai đoạn\"."
+    answer: false
+    explanation: >-
+      Sai. *In the end* (rốt cuộc) không đi với *of + N*. Cụm đúng là **at the end of the period**.

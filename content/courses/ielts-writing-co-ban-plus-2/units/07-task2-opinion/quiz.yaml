@@ -1,0 +1,119 @@
+questions:
+  - id: opinion-two-requirements
+    type: multi
+    prompt: "Bài Opinion (Agree/Disagree) cần làm được những việc nào?"
+    options:
+      - "Nêu rõ mình đồng ý hay không đồng ý"
+      - "Giải thích lý do cho quan điểm"
+      - "Liệt kê đầy đủ ý kiến của mọi nhóm người mà không chọn phe"
+      - "Đưa số liệu thống kê cụ thể để chứng minh"
+    answer: [0, 1]
+    explanation: "Dạng Opinion bắt buộc **thể hiện quan điểm** và **giải thích lý do**. Không được đứng giữa không chọn phe, và không nên bịa số liệu."
+
+  - id: topic-vs-task
+    type: true_false
+    prompt: "Trong đề Agree/Disagree, phần **Task** là phần nêu ra ý kiến cần thảo luận."
+    answer: false
+    explanation: "Ngược lại: **Topic** nêu ý kiến cần thảo luận, còn **Task** là yêu cầu người viết làm gì (nêu quan điểm), ví dụ *To what extent do you agree or disagree?*"
+
+  - id: identify-task-sentence
+    type: single
+    prompt: "Câu nào là phần **Task** của một đề Opinion?"
+    options:
+      - "Online shopping is becoming more popular every year."
+      - "Some people think that shops in city centres will soon disappear."
+      - "To what extent do you agree or disagree?"
+      - "Others believe that traditional shops will always exist."
+    answer: 2
+    explanation: "Câu hỏi *To what extent do you agree or disagree?* là yêu cầu nêu quan điểm → Task. Câu 1 chỉ là bối cảnh; câu 2 và 4 nêu ý kiến → Topic."
+
+  - id: background-sentence
+    type: true_false
+    prompt: "Câu *Online shopping is becoming more popular every year.* (đứng đầu đề) không phải Topic cũng không phải Task."
+    answer: true
+    explanation: "Câu này chỉ mô tả bối cảnh: không nêu ý kiến và không yêu cầu người viết làm gì."
+
+  - id: general-statement-role
+    type: single
+    prompt: "Chức năng của **General statement** trong mở bài là gì?"
+    options:
+      - "Nêu quan điểm cá nhân của người viết"
+      - "Paraphrase lại phần Topic của đề"
+      - "Đưa ra ví dụ đầu tiên"
+      - "Tóm tắt các lý do trong thân bài"
+    answer: 1
+    explanation: "General statement diễn đạt lại Topic, giữ nguyên ý chính. Quan điểm cá nhân thuộc về Thesis statement."
+
+  - id: partly-agree-thesis
+    type: single
+    prompt: "Thesis nào thể hiện hướng **partly agree/disagree**?"
+    options:
+      - "I strongly agree that working from home is better for employees."
+      - "In my opinion, while working from home saves time, working in an office is more effective for teamwork."
+      - "This is an interesting topic for many workers."
+      - "I totally disagree with working from home."
+    answer: 1
+    explanation: "Cấu trúc *while A…, B is more…* thừa nhận một phần phía bên kia nhưng nghiêng về phía còn lại → partly. Câu 1 và 4 là totally; câu 3 không có quan điểm."
+
+  - id: bad-general-statement
+    type: true_false
+    prompt: "*This debate is really interesting.* là một câu General statement đạt yêu cầu."
+    answer: false
+    explanation: "Câu này không paraphrase Topic – người đọc không biết bài bàn về vấn đề gì. General statement phải nhắc lại nội dung đề."
+
+  - id: although-no-but
+    type: true_false
+    prompt: "Câu *Although robots are expensive, but they can save money in the long term.* đúng ngữ pháp."
+    answer: false
+    explanation: "Sau mệnh đề *although* **không dùng *but***. Câu đúng: *Although robots are expensive, they can save money in the long term.*"
+
+  - id: general-statement-while
+    type: fill
+    prompt: "Hoàn thành General statement: *Some believe that children should learn at home, ___ others claim that schools are a better choice.* (một từ)"
+    answer: [while, whereas, but]
+    explanation: "Mẫu quen thuộc: *Some believe that…, while others claim that…* – nối hai ý kiến trái chiều trong Topic."
+
+  - id: thesis-mistakes
+    type: multi
+    prompt: "Những câu thesis nào bị lỗi?"
+    options:
+      - "In my opinion, many people argue that zoos should be closed."
+      - "I strongly agree that zoos should be closed."
+      - "In my opinion, I strongly believe that zoos should be closed."
+      - "I do not know what to think about zoos."
+    answer: [0, 2, 3]
+    explanation: "(1) *In my opinion* nhưng lại nêu ý kiến người khác; (3) lặp ý *In my opinion* + *I strongly believe*; (4) không có quan điểm. Chỉ câu (2) đạt yêu cầu."
+
+  - id: while-structure
+    type: fill
+    prompt: "Hoàn thành thesis: *In my opinion, ___ public transport is cheap, private cars are more convenient.* (một từ, dùng để nhượng bộ)"
+    answer: [while, although, though, even though]
+    explanation: "*While/Although* + S V, + mệnh đề chính. Mệnh đề sau *while/although* là phần nhượng bộ, mệnh đề chính là quan điểm thật."
+
+  - id: partly-body-plan
+    type: single
+    prompt: "Với thesis hướng **partly agree**, cách chia hai đoạn thân bài nào hợp lý?"
+    options:
+      - "Cả hai đoạn đều chỉ nói về phía mà bạn thừa nhận"
+      - "Một đoạn thừa nhận điểm mạnh phía bên kia, một đoạn bảo vệ quan điểm chính"
+      - "Một đoạn kể chuyện cá nhân, một đoạn đưa số liệu"
+      - "Không cần thân bài, chỉ cần mở bài và kết bài dài"
+    answer: 1
+    explanation: "Thesis partly có hai vế (nhượng bộ + quan điểm chính) nên thân bài nên phản ánh cả hai, đoạn quan điểm chính có thể mở bằng *However, I still argue that…*"
+
+  - id: jump-to-conclusion
+    type: single
+    prompt: "*Using public transport improves air quality.* Câu giải thích này mắc lỗi gì?"
+    options:
+      - "Merry-go-round"
+      - "Jump to conclusion"
+      - "Too general"
+      - "Câu hỏi tu từ"
+    answer: 1
+    explanation: "Thiếu bước trung gian: dùng phương tiện công cộng → ít xe cá nhân hơn → ít khí thải hơn → không khí tốt hơn. Nhảy thẳng tới kết luận = **Jump to conclusion**."
+
+  - id: conclusion-phrase
+    type: fill
+    prompt: "Từ nối trang trọng mở đầu kết bài: *In ___, although…, I believe that…*"
+    answer: [conclusion]
+    explanation: "Dùng *In conclusion*. Tránh *In a nutshell* vì mang tính informal."

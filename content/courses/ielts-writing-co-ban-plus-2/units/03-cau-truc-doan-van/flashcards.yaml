@@ -1,0 +1,70 @@
+cards:
+  - id: topic-sentence
+    front: Topic sentence – công thức
+    back: "**Topic** (chủ đề lớn) + **Controlling idea** (ý sẽ phát triển); chỉ thông báo, **không giải thích**."
+    example: There are two big advantages of being a single parent.
+
+  - id: topic-sentence-errors
+    front: 2 lỗi cần tránh khi viết topic sentence
+    back: "**Too general**: ý quá rộng, không có điểm dừng · **Too specific**: đưa luôn số liệu/giải thích, đoạn văn hết chỗ phát triển."
+    example: "❌ Soccer is popular. → ✅ Soccer is popular for some reasons."
+
+  - id: paragraph-funnel
+    front: Mô hình phễu của đoạn văn
+    back: "Topic sentence → Supporting idea → Supporting detail (Explanation / Example)"
+
+  - id: wh-questions
+    front: Cách tìm ý cho supporting sentences
+    back: "Gạch chân keyword cần làm rõ → hỏi **What, Where, When, Who, Why, How** (chỉ chọn câu hỏi hữu ích)."
+
+  - id: off-topic-vs-lack-focus
+    front: Off-topic vs Lack focus
+    back: "**Off-topic**: ý hoàn toàn không liên quan · **Lack focus**: ý liên quan một phần nhưng lệch trọng tâm."
+
+  - id: explanation
+    front: Explanation (câu giải thích)
+    back: "Dùng **kiến thức chung**, viết đủ chuỗi **A → bước trung gian → kết quả**."
+    example: "To explain, … / In fact, … / This is because …"
+
+  - id: jump-to-conclusion
+    front: Jump to conclusion
+    back: Nêu tình huống rồi nhảy thẳng tới kết luận, **thiếu bước trung gian**.
+
+  - id: merry-go-round
+    front: Merry-go-round
+    back: Chỉ **paraphrase lại ý cũ**, ý quay vòng về điểm xuất phát, không phát triển thêm.
+
+  - id: example-checklist
+    front: Example checklist
+    back: Real-life situations · One at a time · No personal stories · No statistical data
+
+  - id: large-number-phrases
+    front: Diễn đạt số lượng lớn thay cho số liệu
+    back: "*the majority of · most · a very large number of · it is not uncommon to see…*"
+    example: It is not uncommon to see young people owing money for the newest phone.
+
+  - id: ieee
+    front: I-E-E-E (đoạn 1 ý)
+    back: Idea → Explanation → Example → Elaborate (diễn giải sâu hơn ví dụ)
+
+  - id: fsf
+    front: FSF (đoạn 3 ý)
+    back: "Introductory → First idea → **Supporting detail** → Second idea → Final idea. Chỉ ý đầu (quan trọng nhất) được phát triển."
+    example: There are three advantages of using public transport.
+
+  - id: adapted-fsf
+    front: Adapted FSF (đoạn 2 ý)
+    back: "Introductory → First idea → Supporting detail → Second idea → Supporting detail. **Mỗi ý** đều được phát triển."
+    example: Playing video games has two disadvantages.
+
+  - id: introduction
+    front: Mở bài – 2 thành phần & mẫu câu
+    back: "**General statement**: *In today's society, there is a trend that… / It is widely believed that…* · **Thesis**: *In my opinion… / I strongly believe that…* hoặc *This essay will discuss A and B.*"
+
+  - id: conclusion
+    front: Kết bài – 2 thành phần & mẫu câu
+    back: "**Restatement**: *In conclusion, while/although S V, S V.* · **Recommendation**: *It is recommended that… / In order to…, S V.*"
+
+  - id: brainstorming-methods
+    front: 3 kỹ thuật brainstorming
+    back: "**Journalistic Questions** (Wh- quanh keyword) · **Listing** (liệt kê → phân ý rộng/hẹp) · **Clustering** (gom chi tiết thành ý lớn, bottom-up)"

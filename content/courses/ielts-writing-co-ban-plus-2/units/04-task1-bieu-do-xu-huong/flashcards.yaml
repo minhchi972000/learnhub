@@ -1,0 +1,90 @@
+cards:
+  - id: task1-structure
+    front: Bố cục bài Task 1
+    back: "Introduction (paraphrase + overview) → Body 1 → Body 2. **Không** Conclusion, **không** ý kiến cá nhân."
+    example: "The line graph illustrates… Overall, … / Body 1 … / Body 2 …"
+
+  - id: analysis-3-steps
+    front: Phân tích đề 3 bước
+    back: "(1) 3W: What – Where – When; (2) Subjects of comparison & Unit; (3) Grouping & Main features."
+    example: "When = 1985, 1995, 2005 → quá khứ đơn; Unit = $ → spending/expenditure."
+
+  - id: overview-openers
+    front: Cụm mở đầu câu overview
+    back: "*Overall, …* / *It is clear that …* / *It can also be seen that …* – **không có số liệu**."
+    example: Overall, recycling rates increased over the period, except for that of France.
+
+  - id: paraphrase-show
+    front: "Paraphrase **show**"
+    back: "illustrate / give information about / compare (động từ chia số ít sau *The graph*)"
+    example: The line graph gives information about unemployment among college graduates.
+
+  - id: paraphrase-time
+    front: "between … and … ↔ ?"
+    back: "*from … to …* hoặc *over a period of X years* / *over an X-year period*"
+    example: The percentage of concert attendees increased over a period of 6 years.
+
+  - id: figure-for
+    front: the figure for + đối tượng
+    back: "Số liệu của … – dùng để tránh lặp lại chủ ngữ dài."
+    example: While visitors to the castle increased, the figure for the aquarium decreased.
+
+  - id: tense-by-time
+    front: Chọn thì theo yếu tố When
+    back: "Quá khứ → quá khứ đơn; không có thời gian → hiện tại đơn; tương lai → *is predicted / expected to*."
+    example: The proportion of people aged 65 and over is predicted to increase.
+
+  - id: grouping-trend-chart
+    front: Hai cách nhóm thân bài (biểu đồ xu hướng)
+    back: "Theo **thời điểm** (năm đầu / các năm sau; nửa đầu / nửa sau) hoặc theo **đối tượng** có xu hướng giống nhau."
+    example: "Body 1: pizza & hamburgers (tăng); Body 2: fish and chips (giảm)."
+
+  - id: trend-up
+    front: Từ vựng xu hướng tăng
+    back: "V: rise, increase, grow, climb, go up · N: a rise, an increase, a growth, a jump"
+    example: Unemployment among school leavers rose dramatically after 2007.
+
+  - id: trend-down
+    front: Từ vựng xu hướng giảm
+    back: "V: fall, drop, decrease, decline · N: a fall, a drop, a decline, a reduction"
+    example: Butter consumption fell to around 50 grams in 2007.
+
+  - id: trend-stable-fluctuate
+    front: Ổn định / dao động
+    back: "Ổn định: remain stable/unchanged, level off, plateau · Dao động: fluctuate, vary (N: fluctuation)"
+    example: The figure remained unchanged at 2.5 million in the next 6 years.
+
+  - id: peak-low
+    front: Đạt đỉnh / chạm đáy
+    back: "reach a peak of / reach the highest point of + số · hit a low / reach the lowest point of + số"
+    example: The figure reached the lowest point of 1.8 million in 2010.
+
+  - id: degree-big-small
+    front: Mức độ thay đổi lớn / nhỏ
+    back: "Lớn: dramatic(ally), sharp(ly), significant(ly), considerable(ly), rapid(ly) · Nhỏ: slight(ly), gradual(ly), slow(ly)"
+    example: The number of complaints increased rapidly over the next months.
+
+  - id: structure-s-v-adv
+    front: "Cấu trúc 1: S + V + adv"
+    back: "Động từ xu hướng + **trạng từ** (đứng trước hoặc sau động từ)."
+    example: Sales of swimming equipment rose steadily over the years.
+
+  - id: structure-there-was
+    front: "Cấu trúc 2: There was + a/an + adj + N + in…"
+    back: "**Tính từ** + danh từ xu hướng (đếm được → cần *a/an*)."
+    example: There was a slight rise in the number of films made by country E.
+
+  - id: at-figure
+    front: Đưa số liệu vào câu
+    back: "Dùng **at** + số liệu; có thể thêm *exactly, approximately, around, just under, well over*."
+    example: In the first year, CO2 emissions of Sweden ranked second, at nearly 9 tonnes.
+
+  - id: number-vs-amount
+    front: number vs amount
+    back: "**the number of** + N đếm được số nhiều · **the amount of** + N không đếm được · dữ liệu % → **percentage / proportion**"
+    example: The number of people working in the steel industry dropped to around 20,000.
+
+  - id: at-the-end-of
+    front: "Giới từ: \"vào cuối giai đoạn\""
+    back: "**at the end of** the period (❌ *in the end of*)"
+    example: Steel imports reached 70,000 tons at the end of the period.

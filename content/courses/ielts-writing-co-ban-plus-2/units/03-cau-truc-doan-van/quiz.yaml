@@ -1,0 +1,157 @@
+questions:
+  - id: topic-sentence-no-explaining
+    type: true_false
+    prompt: Một topic sentence tốt nên vừa nêu ý chính vừa giải thích luôn lý do trong cùng một câu.
+    answer: false
+    explanation: >-
+      Topic sentence **chỉ thông báo** nội dung của đoạn, **không giải thích**. Nếu giải thích luôn,
+      câu sẽ bị *too specific* và đoạn văn không còn gì để phát triển.
+
+  - id: controlling-idea
+    type: single
+    prompt: "Trong câu *Taking a gap year can give students valuable life experience.*, đâu là **controlling idea**?"
+    options:
+      - Taking a gap year
+      - students
+      - valuable life experience
+      - can
+    answer: 2
+    explanation: >-
+      *Taking a gap year* là **Topic** (chủ đề lớn); *valuable life experience* là **Controlling idea** –
+      ý mà các câu sau trong đoạn sẽ phát triển (những trải nghiệm quý giá đó là gì).
+
+  - id: flawed-topic-sentences
+    type: multi
+    prompt: Chọn **các** topic sentence **chưa tốt** (too general hoặc too specific).
+    options:
+      - Football is popular.
+      - Using public transport can save commuters a lot of money.
+      - Last year, 2.3 million people visited this park, mostly on weekends.
+      - Living alone can make elderly people feel lonely.
+      - Dogs are nice.
+    answer: [0, 2, 4]
+    explanation: |-
+      - *Football is popular.* và *Dogs are nice.* → **too general**, ý quá rộng, không biết phát triển đến đâu.
+      - Câu về 2,3 triệu lượt khách → **too specific**, đã đưa số liệu cụ thể nên không còn gì để bàn.
+      - Hai câu còn lại có đủ Topic + Controlling idea.
+
+  - id: lack-focus
+    type: single
+    prompt: >-
+      Topic sentence: *There are several ways to reduce food waste at home.*
+      Câu nào mắc lỗi **Lack focus** (liên quan một phần nhưng lệch trọng tâm)?
+    options:
+      - Families can plan their meals before going shopping.
+      - Leftovers can be stored in the fridge and used the next day.
+      - Food waste is a serious problem in many restaurants.
+      - The history of the refrigerator began in the 18th century.
+    answer: 2
+    explanation: >-
+      Câu về **nhà hàng** vẫn nói về lãng phí thực phẩm nhưng không phải là **cách giảm lãng phí ở nhà** → Lack focus.
+      Câu về lịch sử tủ lạnh hoàn toàn không liên quan → Off-topic. Hai câu đầu là ý phù hợp.
+
+  - id: jump-to-conclusion
+    type: single
+    prompt: >-
+      Supporting idea: *Building more bicycle lanes could reduce air pollution.*
+      Câu giải thích *"As a result, the air will be cleaner."* mắc lỗi gì?
+    options:
+      - Merry-go-round
+      - Jump to conclusion
+      - Off-topic
+      - Không có lỗi
+    answer: 1
+    explanation: >-
+      Câu nhảy thẳng tới kết luận, **thiếu bước trung gian**: có làn đường xe đạp → nhiều người đạp xe thay vì đi xe máy/ô tô
+      → ít khí thải hơn → không khí sạch hơn.
+
+  - id: merry-go-round-cause
+    type: true_false
+    prompt: Lỗi *Merry-go-round* thường xuất phát từ việc người viết quá "ham" paraphrase ý cũ.
+    answer: true
+    explanation: >-
+      Merry-go-round = diễn đạt lại ý cũ bằng từ khác nên ý cứ quay về điểm xuất phát.
+      Paraphrase là để **tránh lặp từ**, không phải để **phát triển ý**.
+
+  - id: example-checklist
+    type: multi
+    prompt: Chọn **các** nguyên tắc **đúng** khi viết Example trong Task 2.
+    options:
+      - Dùng tình huống thực tế, được nhiều người biết đến
+      - Kể chuyện của người thân để ví dụ thêm sinh động
+      - Mỗi lần chỉ đưa một ví dụ tiêu biểu
+      - Đưa phần trăm cụ thể để tăng sức thuyết phục
+      - Liệt kê càng nhiều trường hợp càng tốt
+    answer: [0, 2]
+    explanation: >-
+      Example checklist: **Real-life situations · One at a time · No personal stories · No statistical data**.
+      Chuyện cá nhân khó thuyết phục; số liệu tự bịa thiếu căn cứ; liệt kê nhiều làm loãng ý.
+
+  - id: not-uncommon
+    type: fill
+    prompt: "It is not ___ to see young people queuing for hours to buy a new phone. (điền 1 từ)"
+    answer: [uncommon]
+    explanation: >-
+      *It is not uncommon to see…* (không hiếm gặp…) là cách diễn đạt số lượng lớn thay cho số liệu tự bịa.
+      Các cụm khác: *the majority of, most, a very large number of*.
+
+  - id: fsf-structure
+    type: single
+    prompt: Cấu trúc đoạn thân bài nào có **3 ý**, trong đó **chỉ ý đầu tiên** được phát triển bằng supporting detail?
+    options:
+      - I-E-E-E
+      - FSF
+      - Adapted FSF
+      - General – Thesis
+    answer: 1
+    explanation: >-
+      **FSF** (First – Second – Final): ý đầu là ý quan trọng nhất và được phát triển; ý 2 và 3 là ý phụ.
+      I-E-E-E dành cho đoạn 1 ý; Adapted FSF dành cho đoạn 2 ý, mỗi ý đều có supporting detail.
+
+  - id: ieee-last-e
+    type: fill
+    prompt: "Trong cấu trúc I-E-E-E, chữ E cuối cùng là viết tắt của ___ (diễn giải sâu hơn ví dụ)."
+    answer: [Elaborate, Elaboration]
+    explanation: "I-E-E-E = **Idea → Explanation → Example → Elaborate**. Câu Elaborate bóc tách ví dụ sâu hơn để ý được phát triển tối đa."
+
+  - id: intro-conclusion-errors
+    type: multi
+    prompt: Chọn **các** câu mở bài/kết bài **có lỗi**.
+    options:
+      - In my opinion, I strongly believe that online learning is effective.
+      - In today's society, there is a trendy that people shop online.
+      - It is widely believed that exercise improves mental health.
+      - In a nutshell, the advantages of the trend outweigh its drawbacks.
+      - In conclusion, although working from home saves time, I still believe it has some drawbacks.
+    answer: [0, 1, 3]
+    explanation: |-
+      - *In my opinion, I strongly believe* → lặp ý, chỉ chọn một.
+      - *a trendy* → sau *a* cần danh từ: *a **trend***.
+      - *In a nutshell* → informal, nên dùng *In conclusion*.
+      - Hai câu còn lại đúng mẫu.
+
+  - id: widely-believed
+    type: fill
+    prompt: "It is widely ___ that reading books improves children's vocabulary. (believe – chia đúng dạng)"
+    answer: [believed]
+    explanation: Mẫu General statement *It is widely **believed** that + S + V* dùng dạng bị động (V3), không viết *believes*.
+
+  - id: clustering-direction
+    type: true_false
+    prompt: Kỹ thuật Clustering phù hợp với người thích tư duy theo hướng top-down (nghĩ ý lớn trước rồi mới đến chi tiết).
+    answer: false
+    explanation: >-
+      Clustering là tư duy **bottom-up**: nghĩ các chi tiết cụ thể trước, rồi gom các cụm giống nhau thành ý lớn.
+
+  - id: brainstorm-how-many
+    type: single
+    prompt: Khi brainstorm cho Writing Task 2, nên tìm khoảng bao nhiêu ý?
+    options:
+      - 1 ý duy nhất thật độc đáo
+      - Khoảng 4–5 ý tốt
+      - Càng nhiều càng tốt, ít nhất một trang giấy
+      - Không cần brainstorm, viết ngay
+    answer: 1
+    explanation: >-
+      Chỉ cần **4–5 ý tốt** vì thời gian Task 2 có hạn và quá nhiều ý sẽ khó chọn.
+      Ý tốt là ý **trả lời đúng đề** và **được phát triển sâu**, không cần độc lạ.

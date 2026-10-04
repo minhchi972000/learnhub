@@ -1,0 +1,15 @@
+title: "Task 2: Advantages & Disadvantages"
+summary: Nhận diện đề có/không hỏi ý kiến, bố cục và mẫu câu mở – kết bài, ngôn ngữ thân bài kèm kỹ thuật Clustering, và Referencing language để tăng điểm Coherence & Cohesion.
+lessons:
+  - slug: nhan-dien-de-adv-disadv
+    title: Nhận diện đề With / Without opinion
+    file: 01-nhan-dien-de-adv-disadv.md
+  - slug: bo-cuc-mo-ket-bai
+    title: Bố cục, mẫu Thesis & Conclusion, từ đồng nghĩa
+    file: 02-bo-cuc-mo-ket-bai.md
+  - slug: ngon-ngu-than-bai-clustering
+    title: Ngôn ngữ thân bài & kỹ thuật Clustering
+    file: 03-ngon-ngu-than-bai-clustering.md
+  - slug: referencing-language
+    title: Referencing language – liên kết ý
+    file: 04-referencing-language.md

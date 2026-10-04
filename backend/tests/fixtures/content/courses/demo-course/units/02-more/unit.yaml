@@ -1,0 +1,3 @@
+title: More
+lessons:
+  - {slug: third, title: Third, file: third.md}

@@ -1,0 +1,149 @@
+questions:
+  - id: simple-sentence-one-sv
+    type: true_false
+    prompt: Câu đơn chỉ được phép có đúng 1 chủ ngữ và 1 động từ.
+    answer: false
+    explanation: >-
+      Câu đơn = 1 mệnh đề độc lập, nhưng có thể có nhiều chủ ngữ hoặc nhiều động từ
+      (biến thể SV, SVV, SSV, SSVV). Ví dụ *Lan and Hoa cook dinner and wash the dishes.* vẫn là câu đơn (SSVV).
+
+  - id: spot-dependent-clause
+    type: single
+    prompt: Đâu là **mệnh đề phụ thuộc**?
+    options:
+      - The library opens at 8 a.m.
+      - Although the library opens at 8 a.m.
+      - Students study in the library
+      - The library is quiet
+    answer: 1
+    explanation: >-
+      Liên từ phụ thuộc *although* khiến mệnh đề chưa trọn nghĩa (Mặc dù thư viện mở cửa lúc 8 giờ… thì sao?).
+      Ba lựa chọn còn lại đều là mệnh đề độc lập.
+
+  - id: compound-or-simple
+    type: single
+    prompt: "Câu *The museum was closed, so we visited the park instead.* thuộc loại nào?"
+    options:
+      - Câu đơn (SVV)
+      - Câu ghép
+      - Câu phức
+      - Không phải câu hoàn chỉnh
+    answer: 1
+    explanation: >-
+      Hai mệnh đề độc lập (*The museum was closed* / *we visited the park instead*) được nối bằng **, so** → câu ghép.
+
+  - id: fragments
+    type: multi
+    prompt: Chọn **các** câu **chưa** phải là câu hoàn chỉnh.
+    options:
+      - Because the bus was late.
+      - My brother a doctor in Da Nang.
+      - Works at a hotel near the beach.
+      - Many tourists visit Hoi An every year.
+      - During the rainy season.
+    answer: [0, 1, 2, 4]
+    explanation: |-
+      - *Because the bus was late.* → chỉ có mệnh đề phụ thuộc.
+      - *My brother a doctor…* → thiếu động từ (*is*).
+      - *Works at a hotel…* → thiếu chủ ngữ.
+      - *During the rainy season.* → chỉ là cụm từ.
+      - *Many tourists visit Hoi An every year.* là câu đơn hoàn chỉnh (SV).
+
+  - id: fanboys-result-so
+    type: fill
+    prompt: "The tickets were sold out, ___ we watched the match at home. (điền 1 liên từ FANBOYS)"
+    answer: [so]
+    explanation: Vế sau là **kết quả** của vế trước (hết vé → xem ở nhà) nên dùng *so*.
+
+  - id: for-vs-so
+    type: single
+    prompt: "Chọn câu dùng **for** đúng nghĩa."
+    options:
+      - It was raining heavily, for we stayed at home.
+      - We stayed at home, for it was raining heavily.
+      - We stayed at home, for we watched a film.
+      - It was raining heavily, for the streets were empty and we stayed home.
+    answer: 1
+    explanation: >-
+      *for* (vì) đứng trước **nguyên nhân**. Trời mưa to là nguyên nhân khiến chúng tôi ở nhà,
+      nên câu đúng là *We stayed at home, for it was raining heavily.* Nếu muốn đặt nguyên nhân lên trước thì dùng *so*.
+
+  - id: fanboys-contrast
+    type: fill
+    prompt: "I wanted to join the trip, ___ I had to finish my report. (điền 1 liên từ FANBOYS)"
+    answer: [but, yet]
+    explanation: >-
+      Hai vế **tương phản** (muốn đi nhưng phải làm báo cáo) → *but*. *yet* (tương phản có yếu tố bất ngờ) cũng chấp nhận được,
+      nhưng ở trình độ cơ bản nên ưu tiên *but*.
+
+  - id: complex-one-independent
+    type: true_false
+    prompt: Một câu phức có thể có hai mệnh đề độc lập trở lên.
+    answer: false
+    explanation: >-
+      Câu phức chỉ có **một** mệnh đề độc lập (chứa ý chính), nhưng có thể có **nhiều** mệnh đề phụ thuộc.
+      Hai mệnh đề độc lập nối bằng FANBOYS là câu ghép.
+
+  - id: comma-complex
+    type: multi
+    prompt: Chọn **các** câu dùng dấu phẩy **đúng**.
+    options:
+      - If you study regularly, you will make progress.
+      - You will make progress, if you study regularly.
+      - Although the hotel was cheap it was very clean.
+      - She went to bed early because she was exhausted.
+      - When the film ended, everyone clapped.
+    answer: [0, 3, 4]
+    explanation: |-
+      Quy tắc: mệnh đề phụ thuộc **đứng trước → có dấu phẩy**; **đứng sau → không có dấu phẩy**.
+      - Câu 2 thừa dấu phẩy (*if* đứng sau).
+      - Câu 3 thiếu dấu phẩy sau *Although the hotel was cheap*.
+
+  - id: present-for-future
+    type: fill
+    prompt: "We will start the presentation as soon as the manager ___ . (arrive – chia động từ)"
+    answer: [arrives]
+    explanation: >-
+      Trong mệnh đề thời gian (*when, before, after, as soon as*) nói về tương lai, dùng **hiện tại đơn**, không dùng *will*:
+      *…as soon as the manager **arrives**.*
+
+  - id: academic-features
+    type: multi
+    prompt: Chọn **các** đặc trưng của ngôn ngữ học thuật.
+    options:
+      - Giọng trung lập, không suồng sã
+      - Ưu tiên phrasal verb vì nghe tự nhiên hơn
+      - Dùng động từ đơn thay cho phrasal verb khi có thể
+      - Dùng collocation
+      - Dùng từ lóng để bài viết sinh động
+    answer: [0, 2, 3]
+    explanation: >-
+      Ba đặc trưng: **giọng trung lập**, **chính xác (động từ đơn thay phrasal verb**, ví dụ *get off the bicycle* → *dismount*)
+      và **dùng collocation**. Từ lóng và phrasal verb đời thường làm bài kém trang trọng.
+
+  - id: business-collocation
+    type: fill
+    prompt: "Many small shops went out of ___ during the economic crisis. (điền 1 từ)"
+    answer: [business]
+    explanation: "*go out of business* = phá sản, ngừng kinh doanh. Một số collocation khác: *business is booming, set up in business, do business with*."
+
+  - id: hedging-correct
+    type: multi
+    prompt: Chọn **các** câu dùng hedging **đúng ngữ pháp**.
+    options:
+      - Social media seems to affect teenagers' sleep.
+      - Social media might affecting teenagers' sleep.
+      - There is a possible that social media affects sleep.
+      - Social media probably affects teenagers' sleep.
+      - Social media can to affect teenagers' sleep.
+    answer: [0, 3]
+    explanation: |-
+      - *seem to + V-inf* ✅ và trạng từ *probably* ✅.
+      - Sau modal phải là V-inf: *might **affect***, *can **affect*** (không *-ing*, không *to*).
+      - Sau *a* cần danh từ: *There is a **possibility** that…*
+
+  - id: tendency-noun
+    type: fill
+    prompt: "There is a ___ that young people change jobs more often than their parents did. (danh từ chỉ xu hướng xã hội)"
+    answer: [tendency]
+    explanation: Khi nói về **xu hướng xã hội**, dùng *tendency* (khuynh hướng) trong cấu trúc *There is a tendency that + S + V*, không dùng *certainty*.

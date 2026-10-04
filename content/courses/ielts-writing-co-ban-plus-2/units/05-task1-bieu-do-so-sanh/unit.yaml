@@ -1,0 +1,14 @@
+title: "Task 1: Biểu đồ so sánh"
+summary: >-
+  Nhận diện biểu đồ không có xu hướng thời gian, viết overview và nhóm thông tin theo hai nhóm
+  đối tượng, dùng thành thạo cấu trúc so sánh bằng – hơn – nhất cùng từ vựng về hoạt động.
+lessons:
+  - slug: nhan-dien-overview-nhom-thong-tin
+    title: Nhận diện, overview & nhóm thông tin
+    file: 01-nhan-dien-overview-nhom-thong-tin.md
+  - slug: ngon-ngu-so-sanh
+    title: Ngôn ngữ so sánh
+    file: 02-ngon-ngu-so-sanh.md
+  - slug: tu-vung-hoat-dong
+    title: Từ vựng về hoạt động & collocations
+    file: 03-tu-vung-hoat-dong.md

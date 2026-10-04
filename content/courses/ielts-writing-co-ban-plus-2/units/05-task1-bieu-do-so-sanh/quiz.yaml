@@ -1,0 +1,143 @@
+questions:
+  - id: one-year-is-comparison
+    type: true_false
+    prompt: "Đề bài *The table shows household spending on five items in four countries in 2019* thuộc dạng biểu đồ xu hướng vì có xuất hiện năm."
+    answer: false
+    explanation: >-
+      Sai. Chỉ có **1 năm** nên không thể hiện được sự thay đổi theo thời gian. Cần ít nhất
+      2 mốc thời gian mới là biểu đồ xu hướng → đây là **biểu đồ so sánh**.
+
+  - id: comparison-overview-content
+    type: single
+    prompt: Overview của biểu đồ so sánh nên tập trung vào điều gì?
+    options:
+      - Xu hướng tăng hoặc giảm của từng đối tượng qua các năm
+      - 1–2 đặc điểm nổi bật nhất, ví dụ đối tượng cao nhất / thấp nhất
+      - Toàn bộ số liệu của đối tượng cao nhất
+      - Nhận xét của người viết về ý nghĩa của số liệu
+    answer: 1
+    explanation: >-
+      Biểu đồ so sánh **không có xu hướng**, nên overview chỉ nêu 1–2 đặc điểm nổi bật nhất
+      (cao nhất, thấp nhất, điểm chung), không số liệu và không ý kiến cá nhân.
+
+  - id: grouping-two-steps
+    type: multi
+    prompt: Khi nhóm thông tin thân bài cho biểu đồ so sánh, cần làm gì?
+    options:
+      - Xác định đúng và đủ hai nhóm subjects of comparison
+      - Chọn một nhóm làm trục để chia đoạn
+      - Gom các đối tượng có điểm tương đồng vào cùng một đoạn
+      - Luôn chia theo năm đầu và năm cuối
+    answer: [0, 1, 2]
+    explanation: >-
+      Bước 1: xác định hai nhóm đối tượng và chọn một nhóm làm trục. Bước 2: gom các đối tượng
+      tương đồng (cùng cao, cùng thấp…). Chia theo năm chỉ áp dụng cho biểu đồ có xu hướng.
+
+  - id: superlative-high
+    type: single
+    prompt: "Chọn đáp án đúng: *The percentage of students who cycle to school in Amsterdam is ___, at 68%.*"
+    options:
+      - the most high
+      - the highest
+      - higher
+      - the higher than
+    answer: 1
+    explanation: >-
+      *High* là tính từ ngắn → so sánh nhất là **the highest**. Không viết *the most high*;
+      *the most* chỉ đi với tính từ dài (*the most significant*).
+
+  - id: comparative-no-the
+    type: true_false
+    prompt: "Câu *The figure for Spain is the less significant than that for Italy* đúng ngữ pháp."
+    answer: false
+    explanation: >-
+      Sai. So sánh hơn **không dùng *the***: ✅ *The figure for Spain is less significant than
+      that for Italy.*
+
+  - id: same-without-object
+    type: fill
+    prompt: "Điền 1 từ: *The proportions of visitors to the museum and the gallery are the ___, at 25%.*"
+    answer: [same]
+    explanation: >-
+      Cấu trúc **A and B + be + the same** khi phía sau không có tân ngữ. Nếu có B phía sau thì
+      dùng *the same as*. Có thể thay bằng *similar* (*A and B are similar*).
+
+  - id: similar-to
+    type: fill
+    prompt: "Điền giới từ: *The number of cars sold in Peru is similar ___ the number sold in Chile.*"
+    answer: [to]
+    explanation: >-
+      Cấu trúc so sánh bằng: **A + be + similar to + B**. Không dùng *similarly* (trạng từ) sau
+      *to be*.
+
+  - id: respectively-position
+    type: single
+    prompt: "Câu nào dùng **respectively** đúng?"
+    options:
+      - "Men spend more time on sport than women, respectively at 6 and 4 hours."
+      - "Men spend more time on sport than women, at 6 and 4 hours respectively."
+      - "Men spend more time on sport than women, at 6 hours respective and 4 hours."
+      - "Men respectively spend more time on sport than women, at 6 and 4 hours."
+    answer: 1
+    explanation: >-
+      Số liệu đưa vào bằng **at**, nối bằng **and**, và trạng từ **respectively** đặt **sau** các
+      số liệu: *at 6 and 4 hours respectively*.
+
+  - id: at-for-figures
+    type: fill
+    prompt: "Điền giới từ: *Germany spends the most on entertainment, ___ 19%.*"
+    answer: [at]
+    explanation: >-
+      Khi đưa số liệu vào câu so sánh, dùng giới từ **at** + số liệu. ❌ *for 19%*, ❌ *with 19%*.
+
+  - id: comparison-structures
+    type: multi
+    prompt: Những câu nào là cấu trúc **so sánh bằng**?
+    options:
+      - The figure for A is as high as that for B.
+      - A rose sharply, while B fell slightly.
+      - A and B are similar.
+      - A is more significant than B.
+      - A is the same as B.
+    answer: [0, 2, 4]
+    explanation: >-
+      So sánh bằng: *as … as*, *A and B are similar / the same*, *A is the same as / similar to B*.
+      *more significant than* là so sánh hơn; *rose sharply, while fell slightly* là ngôn ngữ xu hướng,
+      không phải câu so sánh.
+
+  - id: significant-lowest
+    type: single
+    prompt: "Thay *the lowest* bằng cụm có từ **significant**: *Thailand's figure is ___, at 3%.*"
+    options:
+      - the less significant
+      - the most significant
+      - the least significant
+      - least significantly
+    answer: 2
+    explanation: >-
+      *Significant* là tính từ dài: thấp nhất = **the least significant**, cao nhất = *the most
+      significant*, thấp hơn = *less significant than*.
+
+  - id: collocation-do-karate
+    type: single
+    prompt: "Chọn động từ đúng: *About 12% of girls ___ karate after school.*"
+    options: [go, play, do, take]
+    answer: 2
+    explanation: >-
+      Môn võ và các môn tập luyện cá nhân đi với **do** (*do karate, do gymnastics*). *Go* + V-ing
+      (*go swimming*), *play* + môn có bóng / trò chơi (*play golf*), *take* + khóa học.
+
+  - id: viewers-not-watchers
+    type: true_false
+    prompt: "*The proportion of female watchers of football* là cách diễn đạt tự nhiên để nói về số người xem bóng đá."
+    answer: false
+    explanation: >-
+      Sai. *Watcher* nghĩa là người giám sát / quan sát. Người xem thể thao là **viewers**:
+      ✅ *the proportion of female viewers of/for football*.
+
+  - id: participate-in
+    type: fill
+    prompt: "Điền giới từ: *Only 5% of elderly people participate ___ team sports.*"
+    answer: [in]
+    explanation: >-
+      Cụm cố định: **participate in** / **take part in** + hoạt động.

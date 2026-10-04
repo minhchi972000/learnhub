@@ -1,0 +1,75 @@
+cards:
+  - id: task1-overview
+    front: "Task 1 – Overview"
+    back: "*Overall, … / It is clear that…* – nêu đặc điểm nổi bật, **không số liệu**."
+    example: "Overall, the proportion of people using public transport rose, while car use declined."
+
+  - id: task1-trend-structures
+    front: "Task 1 – 2 cấu trúc mô tả xu hướng"
+    back: "**S + V + adv** / **There was + a/an + adj + N + in…**"
+    example: "Sales rose gradually. / There was a gradual rise in sales."
+
+  - id: task1-respectively
+    front: "Task 1 – *respectively*"
+    back: "Đưa số liệu cho nhiều đối tượng theo **đúng thứ tự** đã nêu."
+    example: "Men and women spent 70% and 30% of their budget on food respectively."
+
+  - id: task1-process-passive
+    front: "Task 1 – Process"
+    back: "Hiện tại đơn **bị động** (*be + V3*); từ nối: *The process begins when… / Following this / Finally…*"
+    example: "Fresh oranges are delivered to a factory by truck."
+
+  - id: task1-maps-tense
+    front: "Task 1 – Maps: quá khứ → hiện tại"
+    back: "Dùng **hiện tại hoàn thành** (thường bị động)."
+    example: "The old factory has been replaced by a shopping centre."
+
+  - id: task2-intro-formula
+    front: "Task 2 – Mở bài"
+    back: "**General statement** (paraphrase đề) + **Thesis statement** (quan điểm / nội dung bài)."
+    example: "It is widely believed that… In my opinion, while…, …"
+
+  - id: task2-conclusion-formula
+    front: "Task 2 – Kết bài"
+    back: "*In conclusion, while/although S V, S V.* + *It is recommended that…*"
+    example: "In conclusion, although online learning is flexible, I believe classroom learning is more effective. It is recommended that schools combine both."
+
+  - id: opinion-partly-thesis
+    front: "Opinion – thesis partly agree"
+    back: "*In my opinion, while A…, B plays a more important role.*"
+    example: "In my opinion, while learning online is useful, learning from teachers plays a more important role."
+
+  - id: adv-with-opinion-thesis
+    front: "Adv/Disadv – thesis có ý kiến"
+    back: "*While there are some drawbacks of X, I still believe its positive aspects are more significant.*"
+    example: "While there are some drawbacks of tourism, I still believe its positive aspects are more significant."
+
+  - id: discussion-gs-review
+    front: "Discussion – General statement"
+    back: "*Recently, there has been an argument about whether S V.*"
+    example: "Recently, there has been an argument about whether homework should be banned."
+
+  - id: discussion-tpv-review
+    front: "Discussion – TPV"
+    back: "*On the one hand, there are some reasons why people think… / It is their argument that…*"
+    example: "It is their argument that history teaches young people national pride."
+
+  - id: problem-solution-intro-review
+    front: "Problem – Solution – mở bài Causes–Solutions"
+    back: "*In this essay, the reasons why X happened will be discussed before some possible solutions will be proposed.*"
+    example: "In this essay, the reasons why traffic jams happen will be discussed before some possible solutions will be proposed."
+
+  - id: solution-checklist-review
+    front: "Solution tốt"
+    back: "**Who + What + How effective + Match** – nêu hiệu quả bằng *so that / By doing so*."
+    example: "The government should build more bus lanes so that people can travel to work faster."
+
+  - id: hedging-review
+    front: "Hedging"
+    back: "*seem/appear to V*, *can/could/may/might*, *probably/possibly*, *There is a tendency/possibility/evidence that…* – tránh *always*."
+    example: "There is evidence that regular exercise improves mental health."
+
+  - id: explanation-errors-review
+    front: "Jump to conclusion vs Merry-go-round"
+    back: "**Jump to conclusion**: thiếu bước trung gian. **Merry-go-round**: chỉ paraphrase lại ý cũ."
+    example: "✅ Electric cars release less CO2, so the air quality will improve."

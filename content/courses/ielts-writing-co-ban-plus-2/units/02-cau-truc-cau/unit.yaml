@@ -1,0 +1,18 @@
+title: Cấu trúc của câu
+summary: Mệnh đề, câu đơn – ghép – phức, dấu phẩy, ngôn ngữ học thuật, collocation và hedging.
+lessons:
+  - slug: menh-de-va-cau-don
+    title: Mệnh đề & câu đơn
+    file: 01-menh-de-va-cau-don.md
+  - slug: cau-ghep-va-fanboys
+    title: Câu ghép & FANBOYS
+    file: 02-cau-ghep-va-fanboys.md
+  - slug: cau-phuc
+    title: Câu phức, dấu phẩy & các loại mệnh đề phụ thuộc
+    file: 03-cau-phuc.md
+  - slug: ngon-ngu-hoc-thuat-va-collocation
+    title: Ngôn ngữ học thuật & collocation
+    file: 04-ngon-ngu-hoc-thuat-va-collocation.md
+  - slug: hedging
+    title: Hedging – ngôn ngữ cẩn trọng
+    file: 05-hedging.md

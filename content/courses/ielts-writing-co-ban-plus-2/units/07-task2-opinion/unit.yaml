@@ -1,0 +1,12 @@
+title: "Task 2: Dạng Opinion"
+summary: Nhận diện đề Agree/Disagree (Topic và Task), viết mở bài với General statement + Thesis statement theo hướng totally hoặc partly agree, triển khai thân bài và tránh các lỗi thường gặp.
+lessons:
+  - slug: nhan-dien-de-opinion
+    title: Nhận diện đề Opinion – Topic và Task
+    file: 01-nhan-dien-de-opinion.md
+  - slug: mo-bai-opinion
+    title: Mở bài – General statement & Thesis statement
+    file: 02-mo-bai-opinion.md
+  - slug: than-bai-ket-bai-opinion
+    title: Thân bài, kết bài & lỗi thường gặp
+    file: 03-than-bai-ket-bai-opinion.md

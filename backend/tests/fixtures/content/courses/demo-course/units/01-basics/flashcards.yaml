@@ -1,0 +1,3 @@
+cards:
+  - {id: c1, front: One, back: "1"}
+  - {id: c2, front: Two, back: "2", example: two apples}

@@ -1,0 +1,75 @@
+cards:
+  - id: discussion-signal
+    front: "Dấu hiệu đề Discussion"
+    back: "Đề nêu **hai ý kiến của hai nhóm người** + *Discuss both views (and give your opinion)*."
+    example: "Some people think…, while others believe…. Discuss both views and give your own opinion."
+
+  - id: discussion-vs-adv
+    front: "Discussion vs Advantages & Disadvantages"
+    back: "Adv/Disadv: **một sự việc** (a fact). Discussion: **hai luồng ý kiến** đối nghịch."
+    example: "Fact: More people work from home. / Views: Some think…, others think…"
+
+  - id: discussion-gs
+    front: "General statement (Discussion)"
+    back: "*Recently, there has been an argument **about** whether + S V.*"
+    example: "Recently, there has been an argument about whether learning history is a waste of time."
+
+  - id: discussion-thesis-with
+    front: "Thesis – có ý kiến"
+    back: "*Although some people argue that S V, I still believe that S V because S V.*"
+    example: "Although some people argue that a car-free day is effective, I still believe that there are better methods because its effect is short-term."
+
+  - id: discussion-thesis-without
+    front: "Thesis – không ý kiến (nước đôi)"
+    back: "*Although/While X is beneficial in some ways, Y also has its own advantages.*"
+    example: "While online learning is beneficial in some ways, classroom learning also has its own advantages."
+
+  - id: discussion-thesis-without-2
+    front: "Thesis – không ý kiến (mẫu 2)"
+    back: "*Although some people argue that S V, many others still believe that S V.*"
+    example: "Although some people argue that history is boring, many others still believe that it is valuable."
+
+  - id: tpv-meaning
+    front: "TPV (Third-Person Viewpoint)"
+    back: "Trình bày **ý kiến của người khác** (people/they/their). Dùng cho cả hai đoạn nếu đề chỉ *Discuss both views*."
+    example: "Many people argue that young people are more open to fresh ideas."
+
+  - id: fpv-meaning
+    front: "FPV (First-Person Viewpoint)"
+    back: "Trình bày **ý kiến của chính bạn** – dùng cho đoạn phe bạn ủng hộ khi đề hỏi ý kiến."
+    example: "On the other hand, I would argue that older people are better leaders."
+
+  - id: tpv-topic-sentence
+    front: "TPV – Topic sentence"
+    back: "*On the one hand, there are some reasons why people think + S V.* / *On the other hand, many people would argue that + S V.*"
+    example: "On the one hand, there are some reasons why people think studying history is time-wasting."
+
+  - id: tpv-supporting-idea
+    front: "TPV – Supporting idea"
+    back: "*Many people argue that… / Their first reason is that… / Another common belief is that… / People also hold a belief that…*"
+    example: "Another common belief is that historical information is often biased."
+
+  - id: tpv-supporting-detail
+    front: "TPV – Supporting detail"
+    back: "*They believe that… / It is their argument that… / They think this is because…*"
+    example: "They think this is because different historians may describe the same event differently."
+
+  - id: journalistic-questions
+    front: "3 bước Journalistic Questions"
+    back: "Gạch chân từ khóa → đặt câu hỏi Wh- liên quan và trả lời → nối các mảnh ý thành ý hoàn chỉnh."
+    example: "teachers → Who are teachers? → people trained to teach → Students get reliable knowledge from teachers."
+
+  - id: gerund-definition
+    front: "Gerund (danh động từ)"
+    back: "**V-ing** mang chức năng danh từ: chủ ngữ, tân ngữ, sau giới từ, kết hợp với danh từ."
+    example: "Setting stricter noise standards seems to be necessary."
+
+  - id: gerund-after-preposition
+    front: "Gerund sau giới từ"
+    back: "Sau *of, in, from, about, by…* luôn dùng **V-ing**."
+    example: "Loud music can prevent students from focusing on their lessons."
+
+  - id: parallel-and
+    front: "Song song với *and*"
+    back: "Các thành phần nối bằng *and/or* phải **cùng dạng** ngữ pháp."
+    example: "a way of reducing stress and entertaining themselves"

@@ -1,0 +1,90 @@
+cards:
+  - id: chart-of-comparison
+    front: Biểu đồ so sánh (charts of comparison)
+    back: "Biểu đồ **không có thay đổi theo thời gian** – không có năm hoặc chỉ có 1 năm."
+    example: The table gives information on consumer spending in five countries in 2002.
+
+  - id: comparison-overview
+    front: Overview của biểu đồ so sánh
+    back: "Nêu **1–2 đặc điểm nổi bật nhất** (cao nhất, thấp nhất, điểm chung); không xu hướng, không số liệu."
+    example: Overall, watching TV or videos is the most popular activity among children.
+
+  - id: comparison-grouping
+    front: Nhóm thông tin biểu đồ so sánh
+    back: "(1) Xác định 2 nhóm subjects of comparison, chọn 1 nhóm làm trục; (2) gom các đối tượng tương đồng vào một đoạn."
+    example: "Body 1: food/drinks/tobacco (cao hơn hẳn); Body 2: clothing + leisure."
+
+  - id: as-adj-as
+    front: "A + V + as adj as + B"
+    back: So sánh bằng với *as … as*.
+    example: The amount Spanish people spend on toys is as high as that in Austria.
+
+  - id: the-same-as
+    front: "the same as / the same"
+    back: "*A is **the same as** B* (có B phía sau) · *A and B are **the same*** (không có tân ngữ)."
+    example: The figures for building in company D and company E are the same, at 1 billion.
+
+  - id: similar-to
+    front: "similar to / similar"
+    back: "*A is **similar to** B* · *A and B are **similar*** (không dùng *similarly* sau to be)."
+    example: The percentage of boys who play tennis is similar to that of girls, at 8%.
+
+  - id: comparative-short
+    front: So sánh hơn – tính từ ngắn
+    back: "adj-**er** + than (*higher, lower*); nhấn mạnh bằng *much / slightly*; **không có *the***."
+    example: The percentage of female teachers in nursery schools was much higher than that of men.
+
+  - id: comparative-long
+    front: So sánh hơn – tính từ dài
+    back: "**more / less** + adj dài + than"
+    example: The amount spent on console games in Britain is more significant than that in Spain.
+
+  - id: superlative
+    front: So sánh nhất
+    back: "**the** + adj-**est** (*the highest*) · **the most / the least** + adj dài. ❌ *the most high*"
+    example: The proportion of English people who chose hotels was the highest, at around 55%.
+
+  - id: short-adjective-rule
+    front: Tính từ ngắn là gì?
+    back: "Tính từ 1 âm tiết, hoặc 2 âm tiết tận cùng bằng *-y, -er, -ow, -le, -et* (heavy, clever, narrow, simple, quiet)."
+    example: "narrow → narrower → the narrowest"
+
+  - id: significant-tool
+    front: "Dùng **significant** để so sánh"
+    back: "more/less significant than = cao/thấp hơn · the most/least significant = cao/thấp nhất"
+    example: The percentage of electricity from coal in Thailand is the least significant, at 3%.
+
+  - id: respectively
+    front: respectively
+    back: "Lần lượt – đặt **sau** các số liệu nối bằng *and*."
+    example: Men's share is higher than women's, at 70% and 30% respectively.
+
+  - id: at-plus-figure
+    front: "at + số liệu (trong câu so sánh)"
+    back: "Đưa số liệu ngay sau đối tượng hoặc cuối câu; ❌ *for / with* + số liệu."
+    example: The proportion of male students who play baseball, at 24%, is more significant than that of athletics, at 17%.
+
+  - id: while-whereas
+    front: while / whereas
+    back: Nối hai vế đối lập trong một câu.
+    example: Italian consumers spent the most on clothing, while the figure for Swedish buyers was the lowest.
+
+  - id: go-do-play-take
+    front: go / do / play / take + hoạt động
+    back: "**go** swimming/shopping · **do** karate/gymnastics/exercise · **play** golf/football/computer games/the guitar · **take** a course"
+    example: Nearly 75% of English women go shopping in their free time.
+
+  - id: take-part-in
+    front: "Tham gia hoạt động"
+    back: "**take part in / participate in** + N"
+    example: The figure for those who participate in this sport is much less significant, at 30%.
+
+  - id: viewers
+    front: Người xem thể thao
+    back: "**viewers of / for** + môn thể thao (❌ *watchers* = người giám sát)"
+    example: The proportion of female viewers for basketball is slightly higher than that of players.
+
+  - id: internet-collocations
+    front: Collocation về Internet
+    back: "surf the internet/web · use the internet · have access to the internet · internet users"
+    example: The number of internet users in Iran was the highest, at 56.7 million.

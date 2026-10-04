@@ -1,0 +1,126 @@
+questions:
+  - id: discussion-vs-advdisadv
+    type: single
+    prompt: "Điểm khác biệt chính giữa đề **Discuss both views** và đề **Advantages & Disadvantages** là gì?"
+    options:
+      - "Discussion không bao giờ hỏi ý kiến người viết"
+      - "Discussion đưa ra hai luồng ý kiến của hai nhóm người; Adv/Disadv đưa ra một sự việc"
+      - "Adv/Disadv luôn phải nêu ý kiến"
+      - "Discussion chỉ có một đoạn thân bài"
+    answer: 1
+    explanation: "Adv/Disadv xoay quanh **một sự việc** (a fact); Discussion đưa ra **hai ý kiến đối nghịch** của hai nhóm người. Cả hai dạng đều có thể có hoặc không hỏi ý kiến."
+
+  - id: identify-discussion
+    type: multi
+    prompt: "Những đề nào thuộc dạng **Discussion**?"
+    options:
+      - "Some people think teenagers should have part-time jobs, while others think they should focus on studying. Discuss both views and give your opinion."
+      - "More people now shop online. What are the advantages and disadvantages of this?"
+      - "Some believe that museums should be free; others think visitors should pay. Discuss both views."
+      - "Do the advantages of working from home outweigh the disadvantages?"
+    answer: [0, 2]
+    explanation: "Đề 1 và 3 đưa ra hai ý kiến của hai nhóm người + *Discuss both views*. Đề 2 và 4 nói về ưu – nhược của một sự việc → Adv/Disadv."
+
+  - id: discussion-paragraph-structure
+    type: single
+    prompt: "Với dạng Discussion, nên viết hai đoạn thân bài theo cấu trúc nào?"
+    options:
+      - "I-E-E-E cho cả hai đoạn"
+      - "Adapted FSF cho cả hai đoạn"
+      - "FSF cho đoạn 1, I-E-E-E cho đoạn 2"
+      - "Không cần cấu trúc"
+    answer: 1
+    explanation: "Đề yêu cầu thảo luận **cả hai** phía, nên viết hai đoạn cân bằng theo **Adapted FSF** (2 ý, đều có giải thích) là lựa chọn an toàn cho Task Response."
+
+  - id: argument-about-whether
+    type: fill
+    prompt: "Điền từ còn thiếu: *Recently, there has been an argument ___ whether students should wear uniforms.*"
+    answer: [about]
+    explanation: "Mẫu đúng: *there has been an argument **about** whether S V*. Thiếu *about* là lỗi rất phổ biến."
+
+  - id: thesis-with-opinion
+    type: single
+    prompt: "Đề kết thúc bằng *Discuss both views and give your own opinion.* Thesis nào phù hợp?"
+    options:
+      - "Although some people argue that uniforms limit creativity, many others still believe that they create equality."
+      - "Although some people argue that uniforms limit creativity, I still believe that they are necessary because they reduce peer pressure."
+      - "Recently, there has been an argument about whether students should wear uniforms."
+      - "Uniforms have both strengths and weaknesses."
+    answer: 1
+    explanation: "Đề hỏi ý kiến → thesis phải có **I/my** để nói rõ bạn theo phe nào. Câu 1 là thesis không ý kiến; câu 3 là General statement."
+
+  - id: thesis-no-opinion-no-i
+    type: true_false
+    prompt: "Với đề chỉ yêu cầu *Discuss both views*, thesis nên dùng các cụm như *I believe that* hoặc *It is my belief that*."
+    answer: false
+    explanation: "Đề không hỏi ý kiến → thesis viết kiểu nước đôi, **không** có I/my, ví dụ *Although X is beneficial in some ways, Y also has its own advantages.*"
+
+  - id: tpv-both-paragraphs
+    type: true_false
+    prompt: "Nếu đề chỉ yêu cầu *Discuss both views*, nên dùng góc nhìn ngôi thứ ba (TPV) cho cả hai đoạn thân bài."
+    answer: true
+    explanation: "Khi không cần nêu ý kiến, cả hai đoạn chỉ trình bày ý kiến của các nhóm người khác → TPV."
+
+  - id: tpv-phrases
+    type: multi
+    prompt: "Những cụm nào thuộc ngôn ngữ **TPV**?"
+    options:
+      - "It is their argument that…"
+      - "I would argue that…"
+      - "People also hold a belief that…"
+      - "They think this is because…"
+      - "It is my belief that…"
+    answer: [0, 2, 3]
+    explanation: "TPV dùng *they/their/people*. *I would argue that* và *It is my belief that* là ngôn ngữ của chính người viết (FPV / thesis có ý kiến)."
+
+  - id: their-argument
+    type: fill
+    prompt: "Điền một từ: *It is ___ argument that history has little practical use today.*"
+    answer: [their]
+    explanation: "Trước danh từ *argument* cần tính từ sở hữu → *their*. Viết *them argument* là sai."
+
+  - id: common-belief
+    type: single
+    prompt: "Chọn câu đúng."
+    options:
+      - "Another common believe is that games improve teamwork."
+      - "Another common belief is that games improve teamwork."
+      - "Another common belief that games improve teamwork."
+      - "Another common believing is games improve teamwork."
+    answer: 1
+    explanation: "Sau tính từ *common* cần danh từ *belief*, và sau *is that* phải là S + V đầy đủ."
+
+  - id: gerund-subject
+    type: fill
+    prompt: "Chia động từ: *___ (plant) more trees in cities can reduce air pollution.*"
+    answer: [planting]
+    explanation: "Gerund làm **chủ ngữ** của câu → *Planting more trees…*"
+
+  - id: gerund-after-prep
+    type: fill
+    prompt: "Chia động từ: *Smartphones can prevent students from ___ (concentrate) on their homework.*"
+    answer: [concentrating]
+    explanation: "Sau giới từ *from* dùng V-ing → *prevent sb from concentrating*."
+
+  - id: gerund-parallel
+    type: single
+    prompt: "Câu nào đúng về sự song song khi dùng *and*?"
+    options:
+      - "Music is a way of reducing stress and entertain ourselves."
+      - "Music is a way of reduce stress and entertaining ourselves."
+      - "Music is a way of reducing stress and entertaining ourselves."
+      - "Music is a way of to reduce stress and entertain ourselves."
+    answer: 2
+    explanation: "Sau giới từ *of* dùng V-ing, và hai thành phần nối bằng *and* phải cùng dạng → *reducing… and entertaining…*"
+
+  - id: gerund-functions
+    type: multi
+    prompt: "Gerund có thể đảm nhận những chức năng nào?"
+    options:
+      - "Làm chủ ngữ"
+      - "Làm tân ngữ sau động từ"
+      - "Đứng sau giới từ"
+      - "Làm động từ chính chia theo thì"
+      - "Kết hợp với danh từ khác (vd. *reading skills*)"
+    answer: [0, 1, 2, 4]
+    explanation: "Gerund là V-ing mang chức năng **danh từ**, nên không làm động từ chính của câu."

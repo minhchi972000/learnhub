@@ -1,0 +1,135 @@
+questions:
+  - id: maps-structure
+    type: true_false
+    prompt: Bài viết dạng Maps có bố cục khác các dạng Task 1 khác, gồm Introduction, Overview và một đoạn Body duy nhất.
+    answer: false
+    explanation: >-
+      Sai. Maps cũng có bố cục 3 đoạn như các dạng khác: **Introduction (paraphrase + overview)
+      → Body 1 → Body 2**.
+
+  - id: maps-grouping-detail
+    type: single
+    prompt: Hai bản đồ một ngôi làng (1995 và 2020) có rất nhiều thay đổi ở khắp các khu vực. Cách nhóm thân bài nào hợp lý nhất?
+    options:
+      - "Theo thời gian: Body 1 năm 1995, Body 2 năm 2020"
+      - "Theo khu vực: ví dụ Body 1 phía bắc, Body 2 phía nam"
+      - Theo thứ tự bảng chú thích của bản đồ
+      - Chỉ viết một đoạn mô tả mọi thay đổi
+    answer: 1
+    explanation: >-
+      Nhóm **theo thời gian** khi hình ít chi tiết; nhóm **theo khu vực** khi hình có nhiều chi tiết,
+      nhiều thay đổi. Trong mỗi đoạn, tả thay đổi lớn nhất trước.
+
+  - id: maps-tense-now
+    type: single
+    prompt: "Đề: *The maps show a park in 2000 and now.* Câu nào chia thì đúng?"
+    options:
+      - The lake was expanded and a playground is added.
+      - The lake has been expanded and a playground has been added.
+      - The lake will be expanded and a playground will be added.
+      - The lake expands and a playground adds.
+    answer: 1
+    explanation: >-
+      Thay đổi từ **quá khứ đến hiện tại** → **hiện tại hoàn thành** (bị động): *has/have been + V3*.
+      *Will be + V3* dành cho kế hoạch tương lai; quá khứ đơn dành cho quá khứ → quá khứ.
+
+  - id: maps-no-opinion
+    type: true_false
+    prompt: "Câu *The new car park made the hospital much more convenient for patients* phù hợp để đưa vào thân bài Maps."
+    answer: false
+    explanation: >-
+      Sai. Câu này là **đánh giá / cảm nhận** về thay đổi. Task 1 chỉ mô tả và so sánh:
+      ✅ *A new car park was built to the east of the hospital.*
+
+  - id: maps-change-verbs
+    type: multi
+    prompt: Những từ nào dùng để mô tả việc **xây mới** trên bản đồ?
+    options: [construct, remove, add, narrow, build, destroy]
+    answer: [0, 2, 4]
+    explanation: >-
+      Xây dựng: **build, construct, add**. *Remove, destroy* = phá dỡ; *narrow* = thu hẹp.
+
+  - id: location-preposition-middle
+    type: fill
+    prompt: "Điền giới từ: *A fountain was built ___ the middle of the square.*"
+    answer: [in]
+    explanation: >-
+      Cụm đúng là **in the middle (of)**. ❌ *at the middle*.
+
+  - id: location-preposition-next
+    type: single
+    prompt: "Chọn cách diễn đạt đúng: *A cafe will be added ___ the library.*"
+    options: [beside of, next, close off, next to]
+    answer: 3
+    explanation: >-
+      "Bên cạnh" = **next to** hoặc **beside** (không có *of*). "Gần" = **close to** / **near**.
+
+  - id: diagram-overview
+    type: multi
+    prompt: Overview của một bài Diagram (quy trình) cần nêu những gì?
+    options:
+      - Quy trình gồm bao nhiêu bước
+      - Bước đầu tiên của quy trình
+      - Các đối tượng được so sánh trong quy trình
+      - Bước cuối cùng của quy trình
+      - Ý kiến về hiệu quả của quy trình
+    answer: [0, 1, 3]
+    explanation: >-
+      Overview Diagram: **số bước + bước đầu + bước cuối**, ví dụ *There are 9 stages, starting with
+      … and ending with …*. Diagram không có đối tượng so sánh và không nêu ý kiến.
+
+  - id: diagram-all-steps
+    type: true_false
+    prompt: Trong thân bài Diagram, chỉ cần mô tả những bước nổi bật nhất, có thể bỏ qua các bước nhỏ.
+    answer: false
+    explanation: >-
+      Sai. Khác với biểu đồ số liệu, bài Diagram phải mô tả **tất cả các bước** trong quy trình.
+
+  - id: diagram-split-body
+    type: single
+    prompt: Cách chia hai đoạn thân bài cho Diagram nào là hợp lý nhất?
+    options:
+      - Luôn chia đôi số bước, mỗi đoạn một nửa
+      - Chia tại bước chuyển quan trọng, ví dụ khi nguyên liệu thô đổi dạng hoặc bắt đầu giai đoạn đóng gói
+      - Body 1 cho các bước dùng máy, Body 2 cho các bước làm thủ công
+      - Body 1 cho bước đầu và bước cuối, Body 2 cho các bước còn lại
+    answer: 1
+    explanation: >-
+      Chia tại **bước đánh dấu chuyển biến quan trọng** để bài logic, chứ không chia đều số bước một
+      cách máy móc.
+
+  - id: passive-be-present-perfect
+    type: fill
+    prompt: "Điền dạng *be* (2 từ) cho câu bị động hiện tại hoàn thành: *The old factory ___ demolished.*"
+    answer: [has been]
+    explanation: >-
+      Bị động hiện tại hoàn thành: **have/has been + V3**. Chủ ngữ số ít *The old factory* → **has been**.
+
+  - id: passive-transform
+    type: single
+    prompt: "Chuyển sang bị động: *Workers sort the glass bottles by colour.*"
+    options:
+      - The glass bottles sort by colour.
+      - The glass bottles are sorted by colour.
+      - The glass bottles is sorted by colour by workers.
+      - The glass bottles were sort by colour.
+    answer: 1
+    explanation: >-
+      Hiện tại đơn bị động: **are + V3** (chủ ngữ số nhiều). Tác nhân *workers* không quan trọng nên
+      có thể bỏ *by workers*.
+
+  - id: passive-no-object
+    type: true_false
+    prompt: "Câu *The mixture is gone through a heating process* đúng vì quy trình luôn dùng bị động."
+    answer: false
+    explanation: >-
+      Sai. Phía sau động từ vẫn còn tân ngữ (*a heating process*) và *go through* do chính hỗn hợp
+      "trải qua" → dùng **chủ động**: ✅ *The mixture goes through a heating process.* Trong câu bị
+      động, sau V3 không có tân ngữ.
+
+  - id: sequence-final
+    type: fill
+    prompt: "Điền 1 từ để mở đầu bước cuối: *___, the bottles are labelled and sent to shops.*"
+    answer: [finally, lastly]
+    explanation: >-
+      Từ nối cho bước cuối: **Finally**, *In the last stage*, hoặc *The process ends when…*.
